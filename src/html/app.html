@@ -93,7 +93,6 @@
                     </div>
                 </fieldset>
 
-
                 <fieldset class="fill">
                     <div class="fill__title">
                         <i></i>
@@ -101,37 +100,49 @@
                         <i></i>
                     </div>
 
-                    <div>
-                        Nombre completo
+                    <div class="fill__name">
+                        <label for="name">Nombre completo</label>
+                        <input type="text" id="name" name="name" placeholder="Ej: Greta Thunberg" required>
                     </div>
-                    <div>
-                        Puesto
+                    <div class="fill__job">
+                        <label for="job">Puesto</label>
+                        <input type="text" id="job" name="job" placeholder="Ej: Activista" required>
                     </div>
-                    <div>
-                        Imagen de perfil
+                    <div class="fill__image">
+                        <label for="image">Imagen de perfil</label>
+                        <button>Añadir imagen</button>
+                        <div class="fill__image--preview"></div>
                     </div>
-                    <div>
-                        Añadir imagen
+                    <div class="fill__email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Ej: greta-thunberg@gmail.com" required>
                     </div>
-                    <div>
-                        Email
+                    <div class="fill__phone">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ej: 123456789" required>
                     </div>
-                    <div>
-                        Teléfono
+                    <div class="fill__linkedin">
+                        <label for="linkedin">Linkedin</label>
+                        <input type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/greta-thunberg" required>
                     </div>
-                    <div>
-                        Linkedin
-                    </div>
-                    <div>
-                        Github
+                    <div class="fill__github">
+                        <label for="github">Github</label>
+                        <input type="text" id="github" name="github" placeholder="Ej: @greta-thunberg" required>
                     </div>
                 </fieldset>
 
-
-
-                <h2>Comparte</h2>
-                Crear tarjeta
-
+                <fieldset class="share">
+                    <div class="share__title">
+                        <i></i>
+                        <h2>Comparte</h2>
+                        <i></i>
+                    </div>
+    
+                    <button type="submit" name="" id="">
+                        <i></i>
+                        Crear tarjeta
+                    </button>                  
+                </fieldset>
             </form>
         </section>
     </main>
