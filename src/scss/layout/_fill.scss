@@ -1,5 +1,72 @@
 .fill__box {
     margin: 0 19px 30px 20px;
     border: none;
+    font-family: $font-text;
+    color: $main-text;
+    font-size: 14px;
+    line-height: 1.43;
+    display: flex;
+    flex-direction: column;
+}
+
+.fill__title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    &--icon {
+        color: $icons;
+    }
+    &--title {
+        text-transform: uppercase;
+        color: $smaller-text;
+        font-size: 18px;
+        font-family: $font-text;
+        font-weight: 600;
+    }
+    // &--arrow {
+    //    no se cómo poner el margen para que quede
+    //    pegado a la derecha
+    // }
+}
+
+.fill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__label {
+        margin-top: 20px;
+        margin-bottom: 7px ;
+    }
+    &__input {
+        height: 30px;
+        border: solid 1px $border;
+        padding: 3px 188px 7px 9px;
+    }
+        ::placeholder {
+            font-size: 14px;
+            color: $placeholder;
+        }
+        :focus {
+            outline: 0 none;
+            border: 3px solid #a2deaf;
+        }
+}
+
+.fill__image {
+    display: flex;
+    &--button {
+        width: 140px;
+        height: 30px;
+        color: $color-bg-2;
+        background: $icons;
+        border-radius: 3px;
+        border: none;
+        font-size: 14px;
+    }   
+    &--preview {
+        width: 30px;
+        margin-left: 20px;
+        border: solid 1px #a2deaf;
+    }
 
 }
