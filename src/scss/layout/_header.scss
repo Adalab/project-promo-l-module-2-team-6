@@ -1,0 +1,8 @@
+.header__logo {
+    width: 201px;
+    margin: 31px 79px 30px 40px;
+    object-fit: contain;
+     @include tablet {
+         width: 228px;
+     }
+}
