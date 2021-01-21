@@ -7,6 +7,15 @@
     line-height: 1.43;
     display: flex;
     flex-direction: column;
+
+    @include tablet {
+    margin-right: 399px;
+    margin-left: 40px;
+    }
+
+    @include desktop {
+    margin-right: 655px;
+    }
 }
 
 .fill__title {
