@@ -1,0 +1,26 @@
+.design__box {
+    background-color: $color-bg-2;
+    margin: 27px 20px 31px;
+    font-family: $font-text;
+    text-transform: uppercase;
+    border-bottom: $border-lines solid 1px;
+
+    &__title {
+       padding-bottom: 22px;
+
+    &--title {
+        padding-left: 10px;
+        color: $smaller-text;
+        font-size: 18px;
+        font-weight: 600;
+        height: 24px;
+        }
+    }
+}
+.design__colors--subtitle {
+    padding-left: 19px;
+    font-size: 14px;
+    color: $smaller-text;
+
+
+}
