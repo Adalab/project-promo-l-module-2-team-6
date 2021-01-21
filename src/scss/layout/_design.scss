@@ -1,26 +1,79 @@
-.design__box {
-    background-color: $color-bg-2;
-    margin: 27px 20px 31px;
-    font-family: $font-text;
-    text-transform: uppercase;
-    border-bottom: $border-lines solid 1px;
-
-    &__title {
-       padding-bottom: 22px;
-
-    &--title {
-        padding-left: 10px;
-        color: $smaller-text;
-        font-size: 18px;
-        font-weight: 600;
-        height: 24px;
-        }
+.design {
+  background-color: $color-bg-2;
+  margin: 27px 20px 0px;
+  font-family: $font-text;
+  text-transform: uppercase;
+  border-bottom: $border-lines solid 1px;
+  color: $smaller-text;
+  &__header {
+    padding-bottom: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    &--text {
+      padding-left: 10px;
+      font-weight: 600;
+      font-size: 18px;
+      display: inline;
     }
+  }
+  &__colors {
+    display: flex;
+    &--subtitle {
+      padding-left: 19px;
+      font-size: 14px;
+      width: 50%;
+    }
+    &--palettes {
+      width: 50%;
+      display: block;
+      padding-bottom: 10px;
+    }
+  }
 }
-.design__colors--subtitle {
-    padding-left: 19px;
-    font-size: 14px;
-    color: $smaller-text;
 
+.color-box {
+  width: 30px;
+  height: 25px;
+  color: #00ff0010;
+  display: inline-block;
+  margin-right: -4px;
+}
+.palette {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.palette1__color1 {
+  background-color: $palette-1-1;
+}
+.palette1__color2 {
+  background-color: $palette-1-2;
+}
+.palette1__color3 {
+  background-color: $palette-1-3;
+}
+.palette2__color1 {
+  background-color: $palette-2-1;
+}
+.palette2__color2 {
+  background-color: $palette-2-2;
+}
+.palette2__color3 {
+  background-color: $palette-2-3;
+}
+.palette3__color1 {
+  background-color: $palette-3-1;
+}
+.palette3__color2 {
+  background-color: $palette-3-2;
+}
+.palette3__color3 {
+  background-color: $palette-3-3;
+}
 
+.fa-object-ungroup {
+  color: $icons;
 }

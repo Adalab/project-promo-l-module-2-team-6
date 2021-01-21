@@ -1,42 +1,60 @@
-<fieldset class="design__box">
-    <div class="design__title">
+<fieldset class="design">
+  <div class="design__header">
+    <div class="design__header--title">
       <i class="far fa-object-ungroup"></i>
-      <h2 class="design__title--title">Diseña</h2>
-      <i class="fal fa-chevron-up"></i>
+      <h2 class="design__header--text">Diseña</h2>
     </div>
-    <div class="design">
-      <h5 class="design__colors--subtitle">Colores</h5>
-      <div class="design__colors--palettes">
-        <div class="palette__a">
-          <label for="palette__a">
-            <input type="radio" name="palette" class="" checked />
-            <div class="palette__a--colors">
-              <span class="a__item1">1</span>
-              <span class="a__item2">2</span>
-              <span class="a__item3">3</span>
-            </div>
-          </label>
-        </div>
-        <div class="palette__b">
-          <label for="palette__b">
-            <input type="radio" name="palette" class="" checked />
-            <div class="palette__b--colors">
-              <span class="b__item1">1</span>
-              <span class="b__item2">2</span>
-              <span class="b__item3">3</span>
-            </div>
-          </label>
-        </div>
-        <div class="palette__c">
-          <label for="palette__c">
-            <input type="radio" name="palette" class="" checked />
-            <div class="palette__c--colors">
-              <span class="c__item1">1</span>
-              <span class="c__item2">2</span>
-              <span class="c__item3">3</span>
-            </div>
-          </label>
-        </div>
+    <i class="fas fa-angle-up"></i>
+  </div>
+  <div class="design__colors">
+    <h5 class="design__colors--subtitle">Colores</h5>
+    <div class="design__colors--palettes">
+      <div class="palette palette-1">
+        <label for="palette1">
+          <input
+            id="palette1"
+            type="radio"
+            value="1"
+            name="palette"
+            class=""
+            checked
+          />
+            <div class="palette1__color1 color-box">1</div>
+            <div class="palette1__color2 color-box">2</div>
+            <div class="palette1__color3 color-box">3</div>
+        
+        </label>
+      </div>
+      <div class="palette palette2">
+        <label for="palette2">
+          <input
+            id="palette2"
+            type="radio"
+            value="2"
+            name="palette"
+            class=""
+            checked
+          />
+            <span class="palette2__color1 color-box">1</span>
+            <span class="palette2__color2 color-box">2</span>
+            <span class="palette2__color3 color-box">3</span>
+        </label>
+      </div>
+      <div class=" palette palette3">
+        <label for="palette3">
+          <input
+            id="palette3"
+            type="radio"
+            value="3"
+            name="palette"
+            class=""
+            checked
+          />
+            <span class="palette3__color1 color-box">1</span>
+            <span class="palette3__color2 color-box">2</span>
+            <span class="palette3__color3 color-box">3</span>
+        </label>
       </div>
     </div>
-  </fieldset>
+  </div>
+</fieldset>
