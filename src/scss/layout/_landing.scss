@@ -1,0 +1,61 @@
+.main{
+
+    background-color: $color-bg-2;
+
+    &__logo{
+        width: 250px;
+        height: 63px;
+        object-fit: contain;
+        margin-top: 95px;
+        margin-left: 35px; 
+    }
+
+    &__title{
+        color: $icons;
+        font: $font-title;
+        font-size: 19.2px;
+        font-weight: 900;
+        text-align: center;
+        margin-top: 35.4px;
+    }
+
+    &__text{
+        color: $main-text;
+        font-family: $font-text;
+        text-align: center;
+        font-size: 12.8px;
+
+        &--span{
+           display: block; 
+        }
+    }
+
+    &__section{
+        border: solid rgba(225,115,52,0.21) 1.6px;
+        border-radius: 4px;
+        width: 268px;
+        height: 73.8px;
+        margin: 17.8px auto;
+        padding: 15px 20px 9.8px 20px;
+        //opacity: 0.21; SOLUCIONAR TEMA OPACIDAD
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+
+        &--item{    
+            color: $smaller-text;
+            font-family: $font-text;
+            font-size: 12.8px;
+            font-weight: normal;
+            width: 60px;
+            height: 48.8px;
+            margin: 10px;
+            text-align: center;
+            
+
+        }
+    }
+}
