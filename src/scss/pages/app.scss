@@ -1,8 +1,8 @@
-@import 'core/variables';
-@import 'core/reset';
-@import 'pages/header';
+@import '../core/variables';
+@import '../core/reset';
+@import '../layout/header';
 @import '../layout/card-preview';
-@import 'layout/design';
-@import 'layout/fill';
-@import 'layout/share';
-@import 'layout/footer';
+@import '../layout/design';
+@import '../layout/fill';
+@import '../layout/share';
+@import '../layout/footer';
