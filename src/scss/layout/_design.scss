@@ -13,7 +13,6 @@
     justify-content: space-between;
     font-size: 18px;
     &--text {
-      padding-left: 10px;
       font-weight: 600;
       font-size: 18px;
       display: inline;
@@ -76,4 +75,5 @@
 
 .fa-object-ungroup {
   color: $icons;
+  padding-right: 10px;
 }
