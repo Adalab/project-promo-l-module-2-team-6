@@ -25,11 +25,9 @@
       }
     }
   }
-
   &__colors {
     display: flex;
     border-bottom: $border-lines solid 1px;
-
     &--subtitle {
       padding-left: 19px;
       font-size: 14px;
@@ -45,7 +43,6 @@
     }
   }
 }
-
 .color-box {
   width: 30px;
   height: 25px;
