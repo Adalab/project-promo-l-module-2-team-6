@@ -7,7 +7,7 @@
   @include tablet {
     width: 50vw;
     padding: 27px 30px 0 40px;
-      }
+  }
   &__header {
     padding-bottom: 22px;
     display: flex;
@@ -19,11 +19,17 @@
       font-weight: 600;
       font-size: 18px;
       display: inline;
+      &-icon {
+        color: $icons;
+        padding-right: 10px;
+      }
     }
   }
+
   &__colors {
     display: flex;
     border-bottom: $border-lines solid 1px;
+
     &--subtitle {
       padding-left: 19px;
       font-size: 14px;
@@ -36,9 +42,6 @@
       width: 50%;
       display: block;
       padding-bottom: 10px;
-      @include tablet {
-
-      }
     }
   }
 }
@@ -55,42 +58,39 @@
   justify-content: flex-end;
   margin-bottom: 20px;
 }
-.palette1__color1 {
-  background-color: $palette-1-1;
-  margin-left: 10px; 
+.palette1 {
+  &__color1 {
+    background-color: $palette-1-1;
+    margin-left: 10px;
+  }
+  &__color2 {
+    background-color: $palette-1-2;
+  }
+  &__color3 {
+    background-color: $palette-1-3;
+  }
 }
-.palette1__color2 {
-  background-color: $palette-1-2;
+.palette2 {
+  &__color1 {
+    background-color: $palette-2-1;
+    margin-left: 10px;
+  }
+  &__color2 {
+    background-color: $palette-2-2;
+  }
+  &__color3 {
+    background-color: $palette-2-3;
+  }
 }
-.palette1__color3 {
-  background-color: $palette-1-3;
+.palette3 {
+  &__color1 {
+    background-color: $palette-3-1;
+    margin-left: 10px;
+  }
+  &__color2 {
+    background-color: $palette-3-2;
+  }
+  &__color3 {
+    background-color: $palette-3-3;
+  }
 }
-.palette2__color1 {
-  background-color: $palette-2-1;
-  margin-left: 10px; 
-}
-.palette2__color2 {
-  background-color: $palette-2-2;
-}
-.palette2__color3 {
-  background-color: $palette-2-3;
-}
-.palette3__color1 {
-  background-color: $palette-3-1;
-  margin-left: 10px; 
-}
-.palette3__color2 {
-  background-color: $palette-3-2;
-}
-.palette3__color3 {
-  background-color: $palette-3-3;
-}
-
-.design-icon {
-  color: $icons;
-  padding-right: 10px;
-}
-/* .up-icon {
-  
-}
-*/ 
