@@ -1,4 +1,4 @@
-.fill__box {
+.fill {
     margin: 0 19px 30px 20px;
     border: none;
     font-family: $font-text;
@@ -18,10 +18,11 @@
     }
 }
 
-.fill__title {
+.fill__header {
     margin-top: 10px;
     margin-bottom: 5px;
     display: flex;
+    justify-content: space-between;
     &--icon {
         color: $icons;
     }
@@ -32,14 +33,13 @@
         font-family: $font-text;
         font-weight: 600;
     }
-    // &--arrow {
-    //    no se cómo poner el margen para que quede
-    //    pegado a la derecha
-    // }
+    &--arrow {
+        
+    }
 }
 
 .fill {
-    width: 100%;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     &__label {
