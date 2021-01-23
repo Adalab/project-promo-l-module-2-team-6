@@ -1,47 +1,63 @@
 .app__card {
      background-color: $gradient-1;
-     
+     width: 100%;
+     height:420px;
 }
 .card__reset {
     width: 75px;
     height: 30px;
-    margin: 38px 0 20px 45px;
+    margin: 30px 0 20px 45px;
+    padding-left:9px ;
     border: 1px solid $color-bg-2;
     border-radius: 15px;
     background-color: $gradient-1;   
     text-transform: uppercase;
     font-size: 12px;
 }
-
-   
-
-.card__preview {
-    width: 240px;
-    height: 100%;
-    position: relative;
-    bottom: 30px;
-    left: 45px;
-    top: 10px;
-    background-color:$color-bg-2;
-    text-align: center;
-    
- }
 .card__reset--text {
     padding: 6px 12px 6px 8px;
     font-size: 12px;
     font-family: $font-text;
     color: $smaller-text;
-
 }
 
+.card__preview {
+     width: 240px;
+     height: 315px;
+     border-radius: 2px;
+     background-color:$color-bg-2;
+     text-align: center;
+     padding-top: 10px;
+     position: relative;
+     left:45px;
+ }
+ 
 .card__preview--text-name {
+ width: 200px;
+ height: 20px;
+ border-left: 5px solid $button-1;
  color:$main-text;
+ line-height: 20px;
  font-size: 18px;
  text-align: center;
  font-family: $font-card;
+ font-weight: bold;
+}
+.card__preview--text-job {
+ border-left: 5px solid $button-1;
+ width: 209px;
+ height: 20px;
+ color:$smaller-text;
+ line-height: 20px;
+ font-size: 16px;
+ text-align: center;
+ font-family: $font-card;
+ margin-bottom: 15px;
 }
 
 .card__preview--photo {
+    background-size: cover;
+    background-position: center;
     width: 240px;
     height: 200px;
 }
@@ -49,6 +65,7 @@
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+    
 }
 .card__socialmedia--item {
     width: 32px;
