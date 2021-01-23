@@ -1,6 +1,6 @@
 .app__card {
-    background-color: $gradient-1;
-    
+     background-color: $gradient-1;
+     
 }
 .card__reset {
     width: 75px;
@@ -10,7 +10,22 @@
     border-radius: 15px;
     background-color: $gradient-1;   
     text-transform: uppercase;
+    font-size: 12px;
 }
+
+   
+
+.card__preview {
+    width: 240px;
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    left: 45px;
+    top: 10px;
+    background-color:$color-bg-2;
+    text-align: center;
+    
+ }
 .card__reset--text {
     padding: 6px 12px 6px 8px;
     font-size: 12px;
@@ -18,23 +33,34 @@
     color: $smaller-text;
 
 }
-// .far fa-trash-alt {
-//     width: 11px;
-//     height: 20px;
-//     padding-right: 8px;
-// }
-.card__preview {
-   height: 329px;
-   background-color: pink;
-   
-  
-}
+
 .card__preview--text-name {
  color:$main-text;
  font-size: 18px;
-//  text-align: center;
- 
-//  font-family: $font-card;
+ text-align: center;
+ font-family: $font-card;
+}
 
-
+.card__preview--photo {
+    width: 240px;
+    height: 200px;
+}
+.card__socialmedia {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.card__socialmedia--item {
+    width: 32px;
+    height: 32px;
+    border: 2px solid $border;
+    border-radius: 15px;
+    padding:7px 7px 10px 7px;
+    margin: 5px; 
+}
+.card__socialmedia--link {
+    color: $main-text;
+}
+.app__custom {
+    background-color: coral;
 }
