@@ -1,19 +1,21 @@
 .app__card {
-     background-color: $gradient-1;
+     background-image: linear-gradient(to bottom,$gradient-1,$pale-grey);
      width: 100%;
      min-width: 300px;
-     height:420px;
+     height:460px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
 }
 .card__reset {
-    align-self: start;
+    
+    transform: translate(-105px, 0px);
     width: 75px;
     height: 30px;
     margin: 30px 0 20px 45px;
     padding-left:9px ;
+    margin-top: 5px;
     border: 1px solid $color-bg-2;
     border-radius: 15px;
     background-color: $gradient-1;   
@@ -29,7 +31,7 @@
 
 .card__preview {
      width: 240px;
-     height: 315px;
+     height: 330px;
      border-radius: 2px;
      background-color:$color-bg-2;
      text-align: center;
@@ -71,7 +73,7 @@
 
 .card__socialmedia {
     margin-left: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
@@ -82,7 +84,7 @@
     height: 32px;
     border: 2px solid $border;
     border-radius: 15px;
-    padding:7px 7px 10px 7px;
+    padding:5px 7px 8px 6px;
     margin: 5px; 
 }
 .card__socialmedia--link {
