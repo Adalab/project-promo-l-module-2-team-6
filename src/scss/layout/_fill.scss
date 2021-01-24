@@ -1,0 +1,94 @@
+.fill {
+    padding: 0 19px 30px 20px;
+    border: none;
+    font-family: $font-text;
+    color: $main-text;
+    font-size: 14px;
+    line-height: 1.43;
+    display: flex;
+    flex-direction: column;
+
+        @include tablet {
+            margin-left: 20px;
+        }
+
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon {
+            color: $icons;
+        }
+        &--title {
+            text-transform: uppercase;
+            color: $smaller-text;
+            font-size: 18px;
+            font-family: $font-text;
+            font-weight: 600;
+        }
+        &--arrow {
+            font-size: 18px;
+            padding-right: 10px;
+        }
+        
+        @include tablet {
+            width: 40vw;
+        }
+
+        @include desktop {
+            width: 50vw;
+        }
+    }
+
+    &__form {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        &--label {
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+        &--input {
+            height: 30px;
+            border: solid 1px $border;
+            padding-left: 3px;
+        }
+            ::placeholder {
+                font-size: 14px;
+                color: $placeholder;
+            }
+            :focus {
+                outline: 0 none;
+                border: 3px solid #a2deaf;
+            }
+        &--image {
+            display: flex;
+
+            &--button {
+                width: 140px;
+                height: 30px;
+                color: $color-bg-2;
+                background: $icons;
+                border-radius: 3px;
+                border: none;
+                font-size: 14px;
+            }
+            &--preview {
+                width: 30px;
+                margin-left: 20px;
+                border: solid 1px #a2deaf;
+            }
+        }
+
+        @include tablet {
+            width: 40vw;
+        }
+
+        @include desktop {
+            width: 50vw;
+        }
+    }
+}
+
