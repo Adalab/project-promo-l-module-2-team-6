@@ -1,5 +1,5 @@
-.share__box {
-    margin: 0 20px 30px 23px;
+.share {
+    padding: 0 20px 30px 23px;
     border: none;
     display: flex;
     flex-direction: column;
@@ -12,44 +12,56 @@
     @include desktop {
         margin-right: 655px;
     }
-}
 
-.share__title {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    display: flex;
-    &--icon {
-        color: $icons;
-    }
-    &--title {
-        text-transform: uppercase;
-        color: $smaller-text;
-        font-size: 18px;
-        font-family: $font-text;
-        font-weight: 600;
-    }
-}
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon {
+            color: $icons;
+        }
+        &--title {
+            text-transform: uppercase;
+            color: $smaller-text;
+            font-size: 18px;
+            font-family: $font-text;
+            font-weight: 600;
+        }
+         &--arrow {
+             font-size: 18px;
+             padding-right: 10px;
+         }
 
-.share__button {
-    width: 210px;
-    height: 50px;
-    margin: 0 60px 30px 61px;
-    background: $icons;
-    border-radius: 12px;
-    border: none;
+         @include tablet {
+             width: 40vw;
+         }
 
-    @include tablet {
-    margin: 0 95px 30px 105px;
-    }
-
-    &--create {
-        color: $color-bg-2;
-        font-size: 18px;
-        font-weight: 600;
-        text-transform: uppercase;
+         @include desktop {
+             width: 50vw;
+         }
     }
 
-    &--icon {
-        margin-right: 9px;
+    &__button {
+        width: 210px;
+        height: 50px;
+        margin: 0 60px 30px 61px;
+        background: $icons;
+        border-radius: 12px;
+        border: none;
+        &--create {
+            color: $color-bg-2;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        &--icon {
+            margin-right: 9px;
+        }
+
+        @include tablet {
+            margin: 0 95px 30px 105px;
+        }
     }
 }
