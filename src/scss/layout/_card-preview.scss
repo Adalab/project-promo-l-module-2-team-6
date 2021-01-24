@@ -92,3 +92,16 @@
 .app__custom {
     background-color: coral;
 }
+
+
+@media all and (min-width:768px) {
+    .app__card {
+        width: 40%;
+        height: 800px;
+         }
+ }
+ @media all and (min-width:1024px)   {  
+ .app__card {
+    width: 60%; 
+}
+}
