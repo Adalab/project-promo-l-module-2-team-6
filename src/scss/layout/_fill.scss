@@ -1,5 +1,5 @@
 .fill {
-    margin: 0 19px 30px 20px;
+    padding: 0 19px 30px 20px;
     border: none;
     font-family: $font-text;
     color: $main-text;
@@ -8,74 +8,87 @@
     display: flex;
     flex-direction: column;
 
-    @include tablet {
-    margin-right: 399px;
-    margin-left: 40px;
-    }
+        @include tablet {
+            margin-left: 20px;
+        }
 
-    @include desktop {
-    margin-right: 655px;
-    }
-}
-
-.fill__header {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    &--icon {
-        color: $icons;
-    }
-    &--title {
-        text-transform: uppercase;
-        color: $smaller-text;
-        font-size: 18px;
-        font-family: $font-text;
-        font-weight: 600;
-    }
-    &--arrow {
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon {
+            color: $icons;
+        }
+        &--title {
+            text-transform: uppercase;
+            color: $smaller-text;
+            font-size: 18px;
+            font-family: $font-text;
+            font-weight: 600;
+        }
+        &--arrow {
+            font-size: 18px;
+            padding-right: 10px;
+        }
         
-    }
-}
-
-.fill {
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-    &__label {
-        margin-top: 20px;
-        margin-bottom: 7px ;
-    }
-    &__input {
-        height: 30px;
-        border: solid 1px $border;
-        padding: 3px 188px 7px 9px;
-    }
-        ::placeholder {
-            font-size: 14px;
-            color: $placeholder;
+        @include tablet {
+            width: 40vw;
         }
-        :focus {
-            outline: 0 none;
-            border: 3px solid #a2deaf;
-        }
-}
 
-.fill__image {
-    display: flex;
-    &--button {
-        width: 140px;
-        height: 30px;
-        color: $color-bg-2;
-        background: $icons;
-        border-radius: 3px;
-        border: none;
-        font-size: 14px;
-    }   
-    &--preview {
-        width: 30px;
-        margin-left: 20px;
-        border: solid 1px #a2deaf;
+        @include desktop {
+            width: 50vw;
+        }
     }
 
+    &__form {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        &--label {
+            margin-top: 20px;
+            margin-bottom: 7px;
+        }
+        &--input {
+            height: 30px;
+            border: solid 1px $border;
+            padding-left: 3px;
+        }
+            ::placeholder {
+                font-size: 14px;
+                color: $placeholder;
+            }
+            :focus {
+                outline: 0 none;
+                border: 3px solid #a2deaf;
+            }
+        &--image {
+            display: flex;
+
+            &--button {
+                width: 140px;
+                height: 30px;
+                color: $color-bg-2;
+                background: $icons;
+                border-radius: 3px;
+                border: none;
+                font-size: 14px;
+            }
+            &--preview {
+                width: 30px;
+                margin-left: 20px;
+                border: solid 1px #a2deaf;
+            }
+        }
+
+        @include tablet {
+            width: 40vw;
+        }
+
+        @include desktop {
+            width: 50vw;
+        }
+    }
 }
+
