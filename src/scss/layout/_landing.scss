@@ -1,6 +1,8 @@
 .main{
 
-    background-color: $color-bg-2;
+    background-color: $color-bg-1;
+    height: 438px;
+
 
     &__logo{
         width: 250px;
@@ -57,5 +59,24 @@
             
 
         }
+    }
+
+    &__button{
+        background-color: $button-1;
+        text-decoration: none;
+        color: white;
+        font-family: $font-text;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+        width: 129px;
+        height: 42px;
+        margin: auto;
+        display: flex;
+        padding: 10px 20px;
+        border-radius: 21px;
+        margin-bottom: 30px;
+        
     }
 }

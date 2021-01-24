@@ -1,0 +1,23 @@
+.footer{
+    border-top: solid 1px $border-lines;
+    padding: 0x 61px 20px 61px;
+
+    &__copy{
+    margin-top: 18px;
+    color: $footer-text;
+    text-align: center;
+    font-family: $font-text;
+    font-size: 14px;
+    opacity: 0.5;
+    display: block;
+    }
+
+    &__logo{
+        width: 103px;
+        height: 40px;
+        margin-left: 109px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+}
+
