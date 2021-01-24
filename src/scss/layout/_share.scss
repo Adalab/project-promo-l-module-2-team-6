@@ -1,19 +1,15 @@
 .share {
-    padding: 0 20px 30px 23px;
+    padding: 0 10px 30px 20px;
     border: none;
     display: flex;
     flex-direction: column;
 
     @include tablet {
-        margin-right: 399px;
-        margin-left: 40px;
+        margin-left: 20px;
+        width: 50vw;
     }
 
-    @include desktop {
-        margin-right: 655px;
-    }
-
-    &__title {
+    &__header {
         margin-top: 10px;
         margin-bottom: 30px;
         display: flex;
@@ -35,33 +31,26 @@
          }
 
          @include tablet {
-             width: 40vw;
-         }
-
-         @include desktop {
              width: 50vw;
          }
     }
 
     &__button {
-        width: 210px;
-        height: 50px;
-        margin: 0 60px 30px 61px;
-        background: $icons;
-        border-radius: 12px;
-        border: none;
+        display: flex;
+        border-bottom: $border-lines solid 1px;
         &--create {
+            width: 199px;
+            height: 50px;
+            border-radius: 12px;
+            background: $icons;
             color: $color-bg-2;
             font-size: 18px;
             font-weight: 600;
             text-transform: uppercase;
+            margin: 0 0 30px 38px;
         }
-        &--icon {
-            margin-right: 9px;
-        }
-
         @include tablet {
-            margin: 0 95px 30px 105px;
+            padding-left: 85px;
         }
     }
 }
