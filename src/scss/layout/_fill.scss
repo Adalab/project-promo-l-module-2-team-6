@@ -20,6 +20,7 @@
         align-items: center;
         &--icon {
             color: $icons;
+            padding-right: 5px;
         }
         &--title {
             text-transform: uppercase;
@@ -56,6 +57,7 @@
             ::placeholder {
                 font-size: 14px;
                 color: $placeholder;
+                font-family: $font-text;
             }
             :focus {
                 outline: 0 none;
