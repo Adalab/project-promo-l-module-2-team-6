@@ -8,6 +8,7 @@
 
         @include tablet {
             padding-left: 40px;
+            padding-right: 30px;
             width: 50vw;
         }
 
@@ -46,6 +47,10 @@
             border: solid 1px $border;
             padding-left: 3px;
             margin-bottom: 30px;
+
+            @include tablet {
+                width: 110%;
+            }
         }
             ::placeholder {
                 font-size: 14px;
