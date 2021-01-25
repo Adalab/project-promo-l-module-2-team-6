@@ -1,0 +1,91 @@
+.fill {
+    padding: 0 19px 0px 20px;
+    border: none;
+    font-family: $font-text;
+    color: $main-text;
+    font-size: 14px;
+    line-height: 1.43;
+    display: flex;
+    flex-direction: column;
+
+        @include tablet {
+            margin-left: 20px;
+        }
+
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon {
+            color: $icons;
+            padding-right: 5px;
+        }
+        &--title {
+            text-transform: uppercase;
+            color: $smaller-text;
+            font-size: 18px;
+            font-family: $font-text;
+            font-weight: 600;
+        }
+        &--arrow {
+            font-size: 18px;
+            padding-right: 10px;
+        }
+        
+        @include tablet {
+            width: 50vw;
+        }
+    }
+
+    &__form {
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        border-bottom: $border-lines solid 1px;
+        &--label {
+            margin-top: -10px;
+            margin-bottom: 7px;
+        }
+        &--input {
+            height: 30px;
+            border: solid 1px $border;
+            padding-left: 3px;
+            margin-bottom: 30px;
+        }
+            ::placeholder {
+                font-size: 14px;
+                color: $placeholder;
+                font-family: $font-text;
+            }
+            :focus {
+                outline: 0 none;
+                border: 3px solid #a2deaf;
+            }
+        &--image {
+            display: flex;
+            margin-bottom: 30px;
+
+            &--button {
+                width: 140px;
+                height: 30px;
+                color: $color-bg-2;
+                background: $icons;
+                border-radius: 3px;
+                border: none;
+                font-size: 14px;
+            }
+            &--preview {
+                width: 30px;
+                margin-left: 20px;
+                border: solid 1px #a2deaf;
+            }
+        }
+
+        @include tablet {
+            width: 50vw;
+        }
+    }
+}
+
