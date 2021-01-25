@@ -74,7 +74,6 @@
  
 
 
-
 .card__socialmedia {
     margin-left: 10px;
     margin-bottom: 10px;
@@ -94,11 +93,12 @@
         color: $main-text;
     }
 }
-@include tablet
+@include tablet {   
 .app__card {
     width: 40%;
     height: 800px;
      }
+    }
 
 @include desktop {
     .app__card {
