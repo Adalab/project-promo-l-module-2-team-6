@@ -1,0 +1,57 @@
+.share {
+    padding: 0 10px 30px 20px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        margin-left: 20px;
+        width: 50vw;
+    }
+
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &--icon {
+            color: $icons;
+            padding-right: 5px;
+        }
+        &--title {
+            text-transform: uppercase;
+            color: $smaller-text;
+            font-size: 18px;
+            font-family: $font-text;
+            font-weight: 600;
+        }
+         &--arrow {
+             font-size: 18px;
+             padding-right: 10px;
+         }
+
+         @include tablet {
+             width: 50vw;
+         }
+    }
+
+    &__button {
+        display: flex;
+        border-bottom: $border-lines solid 1px;
+        &--create {
+            width: 199px;
+            height: 50px;
+            border-radius: 12px;
+            background: $icons;
+            color: $color-bg-2;
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin: 0 0 30px 38px;
+        }
+        @include tablet {
+            padding-left: 85px;
+        }
+    }
+}
