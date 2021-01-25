@@ -1,11 +1,11 @@
 .share {
-    padding: 0 10px 30px 20px;
+    padding: 0 19px 30px 20px;
     border: none;
     display: flex;
     flex-direction: column;
 
     @include tablet {
-        margin-left: 20px;
+        padding-left: 40px;
         width: 50vw;
     }
 
@@ -28,11 +28,6 @@
         }
          &--arrow {
              font-size: 18px;
-             padding-right: 10px;
-         }
-
-         @include tablet {
-             width: 50vw;
          }
     }
 
@@ -51,7 +46,7 @@
             margin: 0 0 30px 38px;
         }
         @include tablet {
-            padding-left: 85px;
+            padding-left: 65px;
         }
     }
 }
