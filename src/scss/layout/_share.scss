@@ -9,6 +9,9 @@
         padding-right: 30px;
         width: 50vw;
     }
+    @include desktop {
+        width: 40vw;
+    }
 
     &__header {
         margin-top: 10px;
