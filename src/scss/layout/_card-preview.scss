@@ -4,6 +4,7 @@
 .app__card {
      background-image: linear-gradient(to bottom,$gradient-1,$pale-grey);
      min-width: 300px;
+     padding: 38px 0 40px 0;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -13,7 +14,7 @@
     
     transform: translate(-105px);
     height: 30px;
-    margin: 30px 0 20px 45px;
+    margin: 0 0 20px 45px;
     padding-left:9px ;
     margin-top: 5px;
     border: 1px solid $color-bg-2;
@@ -64,19 +65,16 @@
             color:$smaller-text;
             line-height: 20px;
             font-size: 16px;
-            text-align: center;
+            text-align: start;
+            padding-left: 22px;
             font-family: $font-card;
             margin-bottom: 15px;
            }
  }
  
-
- 
-
-
 .card__socialmedia {
     margin-left: 10px;
-    margin-bottom: 10px;
+    margin-top: 10px;
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
