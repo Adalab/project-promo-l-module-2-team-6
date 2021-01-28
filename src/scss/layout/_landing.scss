@@ -1,7 +1,15 @@
 .main{
 
     background-color: $color-bg-1;
-    height: 80vh;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px #d8d8d8;
+    box-sizing: border-box;
+    height: calc(100vh - 110px);
 
     @include tablet {
         height: 94vh; }
@@ -15,7 +23,6 @@
         margin-left: 35px; 
 
         @include tablet {
-            margin: 350px 175px 0 174px;
             width: 419px;
             height: 105px;
           }
