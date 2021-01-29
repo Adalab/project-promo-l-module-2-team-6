@@ -2,24 +2,19 @@
   background-color: $color-bg-1;
   display: flex;
   justify-content: center;
-  box-sizing: border-box;
-  width: 100%;
   flex-direction: column;
   align-items: center;
-  border: 1px #d8d8d8;
-  box-sizing: border-box;
-  height: 80vh;
+  padding: 94px 26px 30px 25px;
 
   @include tablet {
-    height: 92vh;
+    padding: 348px 174px 59px;
   }
+
+
 
   &__logo {
     width: 250px;
     height: 63px;
-    object-fit: contain;
-    margin-top: 95px;
-    margin-left: 35px;
 
     @include tablet {
       width: 419px;
@@ -61,15 +56,15 @@
     border-radius: 4px;
     width: 268px;
     height: 73.8px;
-    margin: 17.8px auto;
-    padding: 9px 20px 9.8px 20px;
+    margin: 17.8px 0 38.6px;
+    padding: 15px 20px 10px;
 
     @include tablet {
-      width: 330px;
+      width: 325px;
       height: 86px;
-      margin-top: 27px;
+      margin: 27px 0 186px;
       border-radius: 5px;
-      padding: 15px 20px 10px;
+      border: solid rgba(225, 115, 52, 0.21) 2px;
     }
   }
 
@@ -77,6 +72,7 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding: 0 0 7.8px;
 
     &--item {
       color: $smaller-text;
@@ -85,8 +81,13 @@
       font-weight: normal;
       width: 60px;
       height: 48.8px;
-      margin: 10px;
       text-align: center;
+
+      @include tablet {
+        width: 75px;
+        height: 61px;
+        padding: 0 0 12px;
+      }
 
       &-icon {
         color: $icons;
@@ -118,16 +119,7 @@
     font-weight: 600;
     width: 129px;
     height: 42px;
-    /*margin: auto;*/
-    margin-top: 38.6px;
-    display: flex;
     padding: 10px 20px;
     border-radius: 21px;
-    margin-bottom: 30px;
-
-    @include tablet {
-      margin-top: 168px;  
-      margin-bottom: 30px;
-    }
   }
 }
