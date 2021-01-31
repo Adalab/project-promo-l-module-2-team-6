@@ -10,11 +10,10 @@ console.log(paletteElements);
 function handlePalette(ev) {
   //constante que me sirve para saber la paleta seleccionada
   const paletteValue = ev.currentTarget.value;
-  console.log(`Ha seleccionado la paleta:` + paletteValue);
+  console.log(`Ha seleccionado la paleta:` +paletteValue);
 
   if (paletteValue === '1') {
     //cambio color texto y barra
-    console.log(`Ha seleccionado en 1:` + paletteValue);
     cardPreviewText.classList.remove('js-palette2', 'js-palette3');
     cardPreviewText.classList.add('js-palette1');
     //cogercariconos.classList.add ('js-prueba1_3');
@@ -36,7 +35,7 @@ function handlePalette(ev) {
     console.log(`Ha seleccionado otro` + paletteValue);
     cardPreviewText.classList.remove('js-palette1', 'js-palette3');
     cardPreviewText.classList.add('js-palette2');
-    
+
     for (const borderIcon of borderIcons) {
       console.log('borde-icono' + borderIcon);
       borderIcon.classList.remove('js-border-palette3-color3', 'js-border-palette1-color3');
