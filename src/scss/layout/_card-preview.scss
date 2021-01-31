@@ -50,8 +50,8 @@
     &--text-name {
          width: 200px;
          height: 20px;
-         border-left: 5px solid $button-1;
-         color:$main-text;
+         //border-left: 5px solid $palette-1-2;
+         //color:$palette-1-1;
         line-height: 20px;
         font-size: 18px;
         text-align: center;
@@ -59,7 +59,7 @@
         font-weight: bold;
      }
     &--text-job {
-            border-left: 5px solid $button-1;
+            // border-left: 5px solid $palette-1-2;
             width: 209px;
             height: 20px;
             color:$smaller-text;
@@ -71,6 +71,19 @@
             margin-bottom: 15px;
            }
  }
+ .js-prueba1 {
+        border-left: 5px solid $palette-1-2;
+        color:$palette-1-1;
+    }
+.js-prueba2 {
+        border-left: 5px solid $palette-2-2;
+        color:$palette-2-1;
+    }
+.js-prueba3 {
+        border-left: 5px solid $palette-3-2;
+        color:$palette-3-1;
+    }
+
  
 .card__socialmedia {
     margin-left: 10px;
@@ -78,19 +91,36 @@
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
+  
+    
 
     &--item {
         width: 32px;
         height: 32px;
-        border: 2px solid $border;
+        // border: 2px solid $palette-1-3;
         border-radius: 15px;
         padding:5px 7px 8px 6px;
         margin: 5px; 
     }
     &--link {
-        color: $main-text;
+         color: $palette-1-1;
     }
 }
+.js-prueba1_3 {
+    border: 2px solid $palette-1-3; 
+}
+.js-prueba1_1 {
+    color: $palette-1-1;
+}
+.js-prueba2_3 {
+    border: 2px solid $palette-2-3; 
+}
+.js-prueba2_1 {
+    color: $palette-2-1;
+}
+
+
+
 @include tablet { 
     .app{
         display: grid;
