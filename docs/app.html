@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/f2e0e49a34.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/pages/app.css">
+  <title>Create Profile Cards</title>
+</head>
+
+<body>
+  <header class="header">
+    <img class="header__logo" src="./assets/images/logo-treehuggers.png" alt="Logo Awesome profile-cards">
+  </header>
+
+
+  <main class="app">
+    <section class="app__card">
+        <button class="card__reset" type="reset"> <i class="far fa-trash-alt"></i><span class="card__reset--text">Reset</span> </button>
+        <div class="card__preview">
+          <div class="card__preview--text">
+            <h3 class="card__preview--text-name">Greta Thunberg</h3>
+            <h4 class="card__preview--text-job">Activista</h4>
+          </div>
+          <img
+            class="card__preview--photo"
+            src="./assets/images/greta.jpg"
+            alt="Previsualización foto"
+          />
+          <nav class="card__preview--nav">
+            <ul class="card__socialmedia">
+              <li class="card__socialmedia--item">
+                <a href="" alt="mobile">
+                  <i class=" card__socialmedia--link fas fa-mobile-alt"></i>
+                </a>
+              </li>
+              <li class="card__socialmedia--item">
+                <a href="" alt="email">
+                  <i class=" card__socialmedia--link far fa-envelope"></i> 
+                </a>
+              </li>
+              <li class="card__socialmedia--item">
+                <a href="" alt="linkedin">
+                  <i class=" card__socialmedia--link fab fa-linkedin-in"></i> 
+                </a>
+              </li>
+              <li class="card__socialmedia--item">
+                <a href="" alt="github">
+                  <i class="  card__socialmedia--link fab fa-github-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    <section class="app__custom">
+      <form method="post" class="app__form">
+        <fieldset class="design">
+          <div class="design__header">
+            <h2 class="design__header--text">
+              <i class="design__header--text-icon far fa-object-ungroup"></i>Diseña
+            </h2>
+            <i class="up-icon fas fa-chevron-up"></i>
+          </div>
+          <div class="design__colors">
+            <h5 class="design__colors--subtitle">Colores</h5>
+            <div class="design__colors--palettes">
+              <div class="palette palette-1">
+                <label for="palette1">
+                  <input
+                    id="palette1"
+                    type="radio"
+                    value="1"
+                    name="palette"
+                    class=""
+                    checked
+                  />
+                  <div class="palette1__color1 color-box">1</div>
+                  <div class="palette1__color2 color-box">2</div>
+                  <div class="palette1__color3 color-box">3</div>
+                </label>
+              </div>
+              <div class="palette palette2">
+                <label for="palette2">
+                  <input
+                    id="palette2"
+                    type="radio"
+                    value="2"
+                    name="palette"
+                    class=""
+                    checked
+                  />
+                  <span class="palette2__color1 color-box">1</span>
+                  <span class="palette2__color2 color-box">2</span>
+                  <span class="palette2__color3 color-box">3</span>
+                </label>
+              </div>
+              <div class="palette palette3">
+                <label for="palette3">
+                  <input
+                    id="palette3"
+                    type="radio"
+                    value="3"
+                    name="palette"
+                    class=""
+                    checked
+                  />
+                  <span class="palette3__color1 color-box">1</span>
+                  <span class="palette3__color2 color-box">2</span>
+                  <span class="palette3__color3 color-box">3</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fill">
+            <div class="fill__header">
+              <h2 class="fill__header--title">
+                <i class="far fa-keyboard fill__header--icon"></i>
+                Rellena
+              </h2>
+               <i class="fas fa-chevron-up fill__header--arrow"></i>
+            </div>
+
+            <div class="fill__form">
+              <label class="fill__form--label" for="name">Nombre completo</label>
+              <input class="fill__form--input" type="text" id="name" name="name" placeholder="Ej: Greta Thunberg" required/>
+            
+              <label class="fill__form--label" for="job">Puesto</label>
+              <input class="fill__form--input" type="text" id="job" name="job" 
+              placeholder="Ej: Activista" required/>
+           
+              <label class="fill__form--label" for="image">Imagen de perfil</label>
+              <div class="fill__form--image">
+                <button class="fill__form--image--button">Añadir imagen</button>
+              	<div class="fill__form--image--preview"></div>
+              </div>
+            
+              <label class="fill__form--label"for="email">Email</label>
+              <input class="fill__form--input" type="email" id="email" name="email"
+                placeholder="Ej: greta-thunberg@gmail.com" required/>
+          
+              <label class="fill__form--label" for="phone">Teléfono</label>
+              <input class="fill__form--input" type="tel" id="phone" name="phone"
+                placeholder="Ej: 123456789" required/>
+
+              <label class="fill__form--label" for="linkedin">Linkedin</label>
+              <input class="fill__form--input" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/greta-thunberg"/>
+            
+              <label class="fill__form--label"for="github">Github</label>
+              <input class="fill__form--input" type="text" id="github" name="github"
+                placeholder="Ej: @greta-thunberg"/>
+            </div>
+          </fieldset>
+        <fieldset class="share">
+          <div class="share__header">
+            <h2 class="share__header--title">
+              <i class="fas fa-share-alt share__header--icon"></i>
+              Comparte
+            </h2>
+             <i class="fas fa-chevron-up share__header--arrow"></i>
+          </div>
+
+
+          <div class="share__button">
+          <button class="share__button--create" type="submit" name="submit" id="submit">
+              <i class="far fa-address-card share__button--icon"></i>
+              Crear tarjeta
+          </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small class="footer__copy"> Awesome profile-cards &copy; 2021</small>
+    <a href="https://adalab.es/" target="_blank">
+      <img class="footer__logo" src="./assets/images/logo-adalab.png" 
+        alt="Logo Adalab" title="Ir a Adalab"/>
+    </a>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
