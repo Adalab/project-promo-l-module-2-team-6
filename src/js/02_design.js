@@ -1,39 +1,70 @@
+/* eslint-disable no-console */
 'use strict';
 
 const paletteElements = document.querySelectorAll('.js-palette');
-const cogercardText = document.querySelector('.card__preview--text');
-const cogerBordeiconos = document.querySelector('.js-prueba1_3');
-const cogerIconos = document.querySelector('.js-prueba1_1');
-console.log(`iconos` + cogerIconos);
+const cardPreviewText = document.querySelector('.card__preview--text');
+const borderIcons = document.querySelectorAll('.js-border-palette3-color3');
+const linkIcons = document.querySelectorAll('.js-icon-palette3-color2');
 console.log(paletteElements);
-console.log(`mi text`+ cogercardText.innerHTML);
 
 function handlePalette(ev) {
-    const paletteValue = ev.currentTarget.value;
-    console.log(paletteValue);
-    
-    if (paletteValue === "1") {
-        console.log(`Ha seleccionado en 1:`+ paletteValue);
-        cogercardText.classList.remove ('js-prueba2', 'js-prueba3');
-        //cogercariconos.classList.add ('js-prueba1_3');
-        console.log(`ICONO`+ paletteValue);
-        
+  //constante que me sirve para saber la paleta seleccionada
+  const paletteValue = ev.currentTarget.value;
+  console.log(`Ha seleccionado la paleta:` + paletteValue);
 
-      } else if (paletteValue === "2") {
-        console.log(`Ha seleccionado otro` + paletteValue);
-        cogercardText.classList.remove ('js-prueba1', 'js-prueba3');
-        cogercardText.classList.add ('js-prueba2');
-        cogerBordeiconos.classList.add ('js-prueba2_3');
-        cogerIconos.classList.add ('js-prueba2_1');
-       
-      
-    } else if (paletteValue === "3") {
-        console.log(`Ha seleccionado otro` + paletteValue);
-        cogercardText.classList.remove ('js-prueba1', 'js-prueba2');
-        cogercardText.classList.add ('js-prueba3');
-      }
+  if (paletteValue === '1') {
+    //cambio color texto y barra
+    console.log(`Ha seleccionado en 1:` + paletteValue);
+    cardPreviewText.classList.remove('js-palette2', 'js-palette3');
+    cardPreviewText.classList.add('js-palette1');
+    //cogercariconos.classList.add ('js-prueba1_3');
+    console.log(`ICONO` + paletteValue);
+
+    //cambio los 4 bordes
+    for (const borderIcon of borderIcons) {
+      console.log('borde-icono' + borderIcon);
+      borderIcon.classList.remove('js-border-palette2-color3', 'js-border-palette3-color3');
+      borderIcon.classList.add('js-border-palette1-color3');
+    }
+    //cambio los 4 iconos
+    for (const linkIcon of linkIcons) {
+      linkIcon.classList.remove('js-icon-palette3-color2', 'js-icon-palette2-color2');
+      linkIcon.classList.add('js-icon-palette1-color2');
+    }
+
+  } else if (paletteValue === '2') {
+    console.log(`Ha seleccionado otro` + paletteValue);
+    cardPreviewText.classList.remove('js-palette1', 'js-palette3');
+    cardPreviewText.classList.add('js-palette2');
+    
+    for (const borderIcon of borderIcons) {
+      console.log('borde-icono' + borderIcon);
+      borderIcon.classList.remove('js-border-palette3-color3', 'js-border-palette1-color3');
+      borderIcon.classList.add('js-border-palette2-color3');
+    }
+    for (const linkIcon of linkIcons) {
+      console.log('lista-icono' + linkIcon);
+      linkIcon.classList.remove('js-icon-palette3-color2', 'js-icon-palette1-color2');
+      linkIcon.classList.add('js-icon-palette2-color2');
+    }
+  } else if (paletteValue === '3') {
+    console.log(`Ha seleccionado otro` + paletteValue);
+    cardPreviewText.classList.remove('js-palette1', 'js-palette2');
+    cardPreviewText.classList.add('js-palette3');
+
+    for (const borderIcon of borderIcons) {
+      console.log('borde-icono' + borderIcon);
+      borderIcon.classList.remove('js-border-palette1-color3', 'js-border-palette2-color3');
+      borderIcon.classList.add('js-border-palette3-color3');
+    }
+    for (const linkIcon of linkIcons) {
+      console.log('lista-icono' + linkIcon);
+      linkIcon.classList.remove('js-icon-palette1-color2', 'js-icon-palette2-color2');
+      linkIcon.classList.add('js-icon-palette3-color2');
+    }
+  }
 }
 
 for (const paletteElement of paletteElements) {
-    paletteElement.addEventListener('change', handlePalette);
+  paletteElement.addEventListener('change', handlePalette);
 }
