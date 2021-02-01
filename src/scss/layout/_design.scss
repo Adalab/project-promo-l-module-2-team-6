@@ -93,3 +93,13 @@
     background-color: $palette-3-3;
   }
 }
+
+//JS
+
+.designCollapsableCont{
+  display: none;
+}
+
+.js-design-arrow{
+   transform: rotate(180deg);
+}
