@@ -1,31 +1,32 @@
 'use strict';
 
-//Elemento HTML
-const collapsableHeader=document.querySelector('.js-collapsable-header');
-const collapsableContainer=document.querySelector('.js-collapsable-container');
-const arrowButton=document.querySelector('.js-arrow-up');
+ //ELEMENTO HTML
+const designCollapsableHeader=document.querySelector('.js-collapsable-header');
+const designCollapsableCont=document.querySelector('.js-collapsable-container');
+const designArrow = document.querySelector('.js-arrow-up');
 
-// const designCollapsableHeader=document.querySelector('.js-collapsable-header');
-// const designCollapsableCont=document.querySelector('.js-collapsable-container');
-// const arrow = document.querySelector('.js-arrow-up');
+const fillCollapsableHeader=document.querySelector('.js-fill-collapsable-header');
+const fillCollapsableCont=document.querySelector('.js-fill-collapsable-container');
+const fillArrow = document.querySelector('.js-fill-arrow');
 
-// FUNCIÓN
-function handleCollapsable(){
-    collapsableContainer.classList.toggle('collapsable-container');
-    arrowButton.classList.toggle('js-design-arrow');
-    console.log('Hice click');
-};
+
+
+//FUNCIONES
+function handleCollapsable() {
+    designCollapsableCont.classList.toggle('designCollapsableCont');
+    designArrow.classList.toggle('js-design-arrow');
+    console.log('Click aquí')
+}
+
+function handleFillCollapsable() {
+    fillCollapsableCont.classList.toggle('fillCollapsableCont');
+    designArrow.classList.toggle('js-fill-arrow');
+    console.log('Click fill')
+}
+
 
 //EVENTO
-collapsableHeader.addEventListener('click', handleCollapsable);
+designCollapsableHeader.addEventListener('click', handleCollapsable);
 
-// function handleCollapsable() {
-//     designCollapsableCont.classList.toggle('designCollapsableCont');
-//     arrow.classList.toggle('js-design-arrow');
-//     console.log('Click aquí')
-// }
-
-
-
-// designCollapsableHeader.addEventListener('click', handleCollapsable);
+fillCollapsableHeader.addEventListener('click', handleFillCollapsable);
 

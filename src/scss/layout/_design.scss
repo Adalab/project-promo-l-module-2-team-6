@@ -96,10 +96,18 @@
 
 //JS
 
-.collapsable-container{
+.designCollapsableCont{
+  display: none;
+}
+
+.js-fill-collapsable-container{
   display: none;
 }
 
 .js-design-arrow{
    transform: rotate(180deg);
+}
+
+.js-fill-arrow{
+  transform: rotate(180deg);
 }
