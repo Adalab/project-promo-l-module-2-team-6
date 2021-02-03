@@ -1,32 +1,37 @@
 'use strict';
 
- //ELEMENTO HTML
-const designCollapsableHeader=document.querySelector('.js-collapsable-header');
-const designCollapsableCont=document.querySelector('.js-collapsable-container');
-const designArrow = document.querySelector('.js-arrow-up');
+const collapsableHeaders = document.querySelectorAll ('.js-collapsable-header');
 
-const fillCollapsableHeader=document.querySelector('.js-fill-collapsable-header');
-const fillCollapsableCont=document.querySelector('.js-fill-collapsable-container');
-const fillArrow = document.querySelector('.js-fill-arrow');
-
-
-
-//FUNCIONES
-function handleCollapsable() {
-    designCollapsableCont.classList.toggle('designCollapsableCont');
-    designArrow.classList.toggle('js-design-arrow');
-    console.log('Click aquí')
+for (const collapsableHeader of collapsableHeaders) {
+  collapsableHeader.addEventListener ('click', switchCollapsable);
 }
 
-function handleFillCollapsable() {
-    fillCollapsableCont.classList.toggle('fillCollapsableCont');
-    designArrow.classList.toggle('js-fill-arrow');
-    console.log('Click fill')
+function switchCollapsable (ev) {
+  const clickedHeader = ev.currentTarget;
+  const clickedCollapsable = clickedHeader.parentNode;
+
+  const allCollapsablesCont = document.querySelectorAll (
+    '.js-collapsable-container'
+  );
+
+  for (const collapsable of allCollapsablesCont) {
+    if (clickedCollapsable === collapsable) {
+      collapsable.classList.toggle ('collapsable--close');
+    } else {
+      collapsable.classList.add ('collapsable--close');
+    }
+  }
 }
 
+const designCollapsableContainer = document.querySelectorAll (
+  '.js-collapsable-container'
+);
 
-//EVENTO
-designCollapsableHeader.addEventListener('click', handleCollapsable);
+function handleCollapsable (ev) {
+  designCollapsableContainer.classList.toggle ('collapsable--close');
 
-fillCollapsableHeader.addEventListener('click', handleFillCollapsable);
-
+  ev.currentTarget.parentNode.querySelector ('.js-container');
+}
+for (const collapsableElements of designCollapsableContainer) {
+  collapsableElements.addEventListener ('click', handleCollapsable);
+}
