@@ -19,13 +19,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: $smaller-text;
         &--icon {
             color: $icons;
             padding-right: 5px;
         }
         &--title {
             text-transform: uppercase;
-            color: $smaller-text;
             font-size: 18px;
             font-family: $font-text;
             font-weight: 600;
