@@ -1,5 +1,5 @@
 .fill {
-    padding: 0 19px 0px 20px;
+    padding: 0 19px 0px 10px;
     border: none;
     font-family: $font-text;
     font-size: 14px;
@@ -15,12 +15,13 @@
         }
 
     &__header {
-        margin-top: 10px;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: $smaller-text;
+        border-top: $border-lines solid 1px;
+        padding-top: 10px;
         &--icon {
             color: $icons;
             padding-right: 5px;
@@ -41,6 +42,7 @@
         flex-direction: column;
         border-bottom: $border-lines solid 1px;
         color: $main-text;
+        padding-top: 15px;
         &--label {
             margin-top: -10px;
             margin-bottom: 7px;

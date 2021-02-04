@@ -11,7 +11,7 @@
     width: 40vw;
 }
   &__header {
-    padding-bottom: 22px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -29,7 +29,8 @@
   }
   &__colors {
     display: flex;
-    border-bottom: $border-lines solid 1px;
+    padding-top: 22px;
+    
     &--subtitle {
       padding-left: 19px;
       font-size: 14px;
@@ -41,7 +42,6 @@
     &--palettes {
       width: 50%;
       display: block;
-      padding-bottom: 10px;
     }
   }
 }

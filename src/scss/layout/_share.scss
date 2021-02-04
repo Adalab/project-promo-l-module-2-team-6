@@ -14,12 +14,13 @@
     }
 
     &__header {
-        margin-top: 10px;
         margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         color: $smaller-text;
+        border-top: $border-lines solid 1px;
+        padding-top: 10px;
         &--icon {
             color: $icons;
             padding-right: 5px;
