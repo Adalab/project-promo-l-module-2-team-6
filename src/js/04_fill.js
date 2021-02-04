@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const inputsTextConfig = [
   {
@@ -19,7 +19,7 @@ const inputsTextConfig = [
     inputClass: ".js-input-email",
     previewClass: ".js-preview-email",
     defaultValue: "",
-    previewPrefix: "",
+    previewPrefix: "mailto:",
     previewElementAttribute: "href",
   },
   {
@@ -49,10 +49,8 @@ function updateAllInputs() {
   for (const inputTextConfig of inputsTextConfig) {
     const inputElement = document.querySelector(inputTextConfig.inputClass);
     const previewElement = document.querySelector(inputTextConfig.previewClass);
-    const defaultElement = document.querySelector(inputTextConfig.defaultValue);
-    const previewPrefixElement = document.querySelector(
-      inputTextConfig.previewPrefix
-    );
+    const defaultElement = "";
+    const previewPrefixElement = "";
     const attributeElement = document.querySelector(
       inputTextConfig.previewElementAttribute
     );
@@ -70,8 +68,8 @@ function updateAllInputs() {
       if (inputElement.value === "") {
         newValue = "#";
       } else {
-        newValue = newValue.replace(inputTextConfig.cardPrefix, "");
-        newValue = inputTextConfig.cardPrefix + newValue;
+        newValue = newValue.replace(inputTextConfig.previewPrefix, "");
+        newValue = inputTextConfig.previewPrefix + newValue;
       }
       previewElement.href = newValue;
     }
