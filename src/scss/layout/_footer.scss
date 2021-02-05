@@ -1,44 +1,30 @@
 .footer {
+  border-top: solid 1px $border-lines;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 0 20px 0;
 
-    border-top: solid 1px $border-lines;
-    height: 20vh;
-    
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 40px;
+  }
 
+  &__copy {
+    font-size: 14px;
+    font-family: $font-text;
+    text-align: center;
+    color: $footer-text;
+    margin-bottom: 12px;
+    line-height: 1.43;
+    opacity: 0.5;
+  }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 18px 0 20px 0;
-
-    @include tablet {
-        flex-direction: row;
-        justify-content: space-between;
-        height: 7vh;
-    }
-
-    &__copy {
-        font-size: 14px;
-        font-family: $font-text;
-        text-align: center;
-        color: $footer-text;
-        margin-top: 18px;
-        margin-bottom: 12px;
-        line-height: 1.43;
-        opacity: 0.5;
-
-        @include tablet {
-            margin: 18px 0 22px 41px;
-        }
-    }
-
-    &__logo {
-        width: 103px;
-        height: 40px;
-        margin-bottom: 20px;
-
-        @include tablet {
-            margin: 10px 40px 10px;
-        }
-    }
+  &__logo {
+    width: 103px;
+    height: 40px;
+  }
 }
-
