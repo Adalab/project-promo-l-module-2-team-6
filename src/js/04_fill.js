@@ -1,11 +1,87 @@
-'use.strict';
+'use strict';
 
-console.log('>> Ready :)');
+const inputsTextConfig = [
+  {
+    inputClass: ".js-input-name",
+    previewClass: ".js-preview-name",
+    defaultValue: "Greta Thunberg",
+    prevewPrefix: "",
+    previewElementAttribute: "innerHTML",
+  },
+  {
+    inputClass: ".js-input-job",
+    previewClass: ".js-preview-job",
+    defaultValue: "Activista",
+    prevewPrefix: "",
+    previewElementAttribute: "innerHTML",
+  },
+  {
+    inputClass: ".js-input-email",
+    previewClass: ".js-preview-email",
+    defaultValue: "",
+    previewPrefix: "mailto:",
+    previewElementAttribute: "href",
+  },
+  {
+    inputClass: ".js-input-phone",
+    previewClass: ".js-preview-phone",
+    defaultValue: "",
+    previewPrefix: "",
+    previewElementAttribute: "href",
+  },
+  {
+    inputClass: ".js-input-linkedin",
+    previewClass: ".js-preview-linkedin",
+    defaultValue: "",
+    previewPrefix: "https://www.linkedin.com/in/",
+    previewElementAttribute: "href",
+  },
+  {
+    inputClass: ".js-input-github",
+    previewClass: ".js-preview-github",
+    defaultValue: "",
+    previewPrefix: "https://www.github.com/",
+    previewElementAttribute: "href",
+  },
+];
 
-const inputName = document.querySelector('.js-input-name');
-const previewName = document.querySelector('.js-preview-name');
+function updateAllInputs() {
+  for (const inputTextConfig of inputsTextConfig) {
+    const inputElement = document.querySelector(inputTextConfig.inputClass);
+    const previewElement = document.querySelector(inputTextConfig.previewClass);
+    const defaultElement = "";
+    const previewPrefixElement = "";
+    const attributeElement = document.querySelector(
+      inputTextConfig.previewElementAttribute
+    );
 
-function pickUpInput () {
-    previewName.innerHTML = event.currentTarget.value;
+    let newValue = inputElement.value;
+
+    if (inputTextConfig.previewElementAttribute === "innerHTML") {
+      if (inputElement.value === "") {
+        newValue = inputTextConfig.defaultValue;
+      } else {
+        newValue = inputElement.value;
+      }
+      previewElement.innerHTML = newValue;
+    } else if (inputTextConfig.previewElementAttribute === "href") {
+      if (inputElement.value === "") {
+        newValue = "#";
+        
+      } else {
+        newValue = newValue.replace(inputTextConfig.previewPrefix, "");
+        newValue = inputTextConfig.previewPrefix + newValue;
+        // socialMediaItem.classList.remove('opacity');
+      }
+      previewElement.href = newValue;
+    }
+  }
 }
-inputName.addEventListener('keyup', pickUpInput);
+
+const inputTextElements = document.querySelectorAll(".js-input-text");
+for (const inputTextElement of inputTextElements) {
+  inputTextElement.addEventListener("keyup", updateAllInputs);
+}
+
+updateAllInputs();
+

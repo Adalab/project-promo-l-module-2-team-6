@@ -1,18 +1,18 @@
-<fieldset class="fill">
-    <div class="fill__header">
+<fieldset class="fill js-collapsable-container">
+    <div class="fill__header  js-collapsable-header collapsable--close">
       <h2 class="fill__header--title">
-        <i class="far fa-keyboard fill__header--icon"></i>
+        <i class="far fa-keyboard fill__header--icon js-arrow-up"></i>
         Rellena
       </h2>
        <i class="fas fa-chevron-up fill__header--arrow"></i>
     </div>
 
-    <div class="fill__form">
-      <label class="fill__form--label" for="name">Nombre completo</label>
-      <input class="fill__form--input js-input-name" type="text" id="name" name="name" placeholder="Ej: Greta Thunberg" required/>
+    <div class="fill__form hidden__container">
+      <label class="fill__form--label userName" for="name">Nombre completo</label>
+      <input class="fill__form--input js-input-name js-input-text" type="text" id="name" name="name" placeholder="Ej: Greta Thunberg" required/>
     
       <label class="fill__form--label" for="job">Puesto</label>
-      <input class="fill__form--input" type="text" id="job" name="job" 
+      <input class="fill__form--input js-input-job js-input-text" type="text" id="job" name="job" 
       placeholder="Ej: Activista" required/>
    
       <label class="fill__form--label" for="image">Imagen de perfil</label>
@@ -22,18 +22,18 @@
       </div>
     
       <label class="fill__form--label"for="email">Email</label>
-      <input class="fill__form--input" type="email" id="email" name="email"
+      <input class="fill__form--input js-input-email js-input-text" type="email" id="email" name="email"
         placeholder="Ej: greta-thunberg@gmail.com" required/>
   
       <label class="fill__form--label" for="phone">Teléfono</label>
-      <input class="fill__form--input" type="tel" id="phone" name="phone"
+      <input class="fill__form--input js-input-phone js-input-text" type="tel" id="phone" name="phone"
         placeholder="Ej: 123456789" required/>
 
       <label class="fill__form--label" for="linkedin">Linkedin</label>
-      <input class="fill__form--input" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/greta-thunberg"/>
+      <input class="fill__form--input js-input-linkedin js-input-text" type="text" id="linkedin" name="linkedin" placeholder="Ej: linkedin.com/in/greta-thunberg"/>
     
       <label class="fill__form--label"for="github">Github</label>
-      <input class="fill__form--input" type="text" id="github" name="github"
+      <input class="fill__form--input js-input-github js-input-text" type="text" id="github" name="github"
         placeholder="Ej: @greta-thunberg"/>
     </div>
   </fieldset>

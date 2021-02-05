@@ -1,17 +1,23 @@
-<fieldset class="share">
-  <div class="share__header">
+<fieldset class="share js-collapsable-container">
+  <div class="share__header js-collapsable-header collapsable--close">
     <h2 class="share__header--title">
-      <i class="fas fa-share-alt share__header--icon"></i>
+      <i
+        class="fas fa-share-alt share__header--icon js-arrow-share js-arrow-up"
+      ></i>
       Comparte
     </h2>
-     <i class="fas fa-chevron-up share__header--arrow"></i>
+    <i class="fas fa-chevron-up share__header--arrow"></i>
   </div>
 
-
-  <div class="share__button">
-  <button class="share__button--create" type="submit" name="submit" id="submit">
+  <div class="share__button hidden__container">
+    <button
+      class="share__button--create js-create-btn"
+      type="submit"
+      name="submit"
+      id="submit"
+    >
       <i class="far fa-address-card share__button--icon"></i>
       Crear tarjeta
-  </button>
+    </button>
   </div>
 </fieldset>

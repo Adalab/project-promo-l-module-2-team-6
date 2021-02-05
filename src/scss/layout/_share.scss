@@ -14,18 +14,19 @@
     }
 
     &__header {
-        margin-top: 10px;
         margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        color: $smaller-text;
+        border-top: $border-lines solid 1px;
+        padding-top: 10px;
         &--icon {
             color: $icons;
             padding-right: 5px;
         }
         &--title {
             text-transform: uppercase;
-            color: $smaller-text;
             font-size: 18px;
             font-family: $font-text;
             font-weight: 600;
