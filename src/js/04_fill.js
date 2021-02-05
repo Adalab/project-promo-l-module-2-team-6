@@ -67,9 +67,11 @@ function updateAllInputs() {
     } else if (inputTextConfig.previewElementAttribute === "href") {
       if (inputElement.value === "") {
         newValue = "#";
+        
       } else {
         newValue = newValue.replace(inputTextConfig.previewPrefix, "");
         newValue = inputTextConfig.previewPrefix + newValue;
+        // socialMediaItem.classList.remove('opacity');
       }
       previewElement.href = newValue;
     }
@@ -82,3 +84,4 @@ for (const inputTextElement of inputTextElements) {
 }
 
 updateAllInputs();
+
