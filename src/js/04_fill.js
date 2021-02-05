@@ -4,14 +4,14 @@ const inputsTextConfig = [
   {
     inputClass: ".js-input-name",
     previewClass: ".js-preview-name",
-    defaultValue: "Greta Thunberg",
+    defaultValue: "Buscad fotos que os gusten",
     prevewPrefix: "",
     previewElementAttribute: "innerHTML",
   },
   {
     inputClass: ".js-input-job",
     previewClass: ".js-preview-job",
-    defaultValue: "Activista",
+    defaultValue: "para preparar un gif chulo",
     prevewPrefix: "",
     previewElementAttribute: "innerHTML",
   },
