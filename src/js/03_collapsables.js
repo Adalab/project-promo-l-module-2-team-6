@@ -9,7 +9,6 @@ for (const collapsableHeader of collapsableHeaders) {
 function switchCollapsable (ev) {
   const clickedHeader = ev.currentTarget;
   const clickedCollapsable = clickedHeader.parentNode;
-  
 
   const allCollapsablesCont = document.querySelectorAll(
     '.js-collapsable-container');
@@ -22,8 +21,3 @@ function switchCollapsable (ev) {
     }
   }
 }
-
-const designCollapsableContainer = document.querySelectorAll(
-  '.js-collapsable-container'
-);
-
