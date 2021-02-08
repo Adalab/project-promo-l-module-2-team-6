@@ -71,7 +71,6 @@ function updateAllInputs() {
       } else {
         newValue = newValue.replace(inputTextConfig.previewPrefix, "");
         newValue = inputTextConfig.previewPrefix + newValue;
-        // socialMediaItem.classList.remove('opacity');
       }
       previewElement.href = newValue;
     }

@@ -5,7 +5,7 @@ const paletteElements = document.querySelectorAll('.js-palette');
 const cardPreviewText = document.querySelector('.card__preview--text');
 const borderIcons = document.querySelectorAll('.js-border-palette1-color3');
 const linkIcons = document.querySelectorAll('.js-icon-palette1-color2');
-console.log(paletteElements);
+// console.log(paletteElements);
 
 function handlePalette(ev) {
   //constante que me sirve para saber la paleta seleccionada
