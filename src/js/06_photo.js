@@ -5,6 +5,7 @@ const uploadBtn = document.querySelector('.js__profile-trigger');
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
+let photo = '';
 
 /**
  * Recoge el archivo añadido al campo de tipo "file"
@@ -31,9 +32,16 @@ function writeImage() {
    * de nuestro componente.
    */
 
-  console.log(fr.result);
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
-  profileImage.style.backgroundImage = `url(${fr.result})`;
+  photo = fr.result;
+  updatePhoto();
+  // después de cualquier acción del usuario guardo en el local storage
+  saveInLocalStorage();
+}
+
+function updatePhoto() {
+  const currentPhoto = photo || '//beta.adalab.es/resources/images/adalab-logo-128x128.png';
+  profilePreview.style.backgroundImage = `url(${currentPhoto})`;
+  profileImage.style.backgroundImage = `url(${currentPhoto})`;
 }
 
 /**
