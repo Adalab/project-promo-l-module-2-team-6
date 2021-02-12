@@ -1,24 +1,23 @@
 /* eslint-disable no-console */
 'use strict';
 
+const cardElement =document.querySelector(`.js-card`);
+
 const paletteElements = document.querySelectorAll('.js-palette');
 const cardPreviewText = document.querySelector('.card__preview--text');
 const borderIcons = document.querySelectorAll('.js-border-palette1-color3');
 const linkIcons = document.querySelectorAll('.js-icon-palette1-color2');
-// console.log(paletteElements);
+let checkedPalette = 1;
 
 function handlePalette(ev) {
-  //constante que me sirve para saber la paleta seleccionada
-  const paletteValue = ev.currentTarget.value;
-  console.log(paletteValue);
+  const checkedPaletteElement = document.querySelector('.js-palette:checked');
+  checkedPalette = checkedPaletteElement.value;
+  cardElement.classList.add('palette'+ checkedPalette);
 
-  if (paletteValue === '1') {
-    //cambio color texto y barra
+  if (checkedPalette === '1') {
     cardPreviewText.classList.remove('js-palette2', 'js-palette3');
     cardPreviewText.classList.add('js-palette1');
-    //cogercariconos.classList.add ('js-prueba1_3');
 
-    //cambio los 4 bordes
     for (const borderIcon of borderIcons) {
   
       borderIcon.classList.remove('js-border-palette2-color3', 'js-border-palette3-color3');
@@ -30,7 +29,7 @@ function handlePalette(ev) {
       linkIcon.classList.add('js-icon-palette1-color2');
     }
 
-  } else if (paletteValue === '2') {
+  } else if (checkedPalette === '2') {
    
     cardPreviewText.classList.remove('js-palette1', 'js-palette3');
     cardPreviewText.classList.add('js-palette2');
@@ -44,7 +43,7 @@ function handlePalette(ev) {
       linkIcon.classList.remove('js-icon-palette3-color2', 'js-icon-palette1-color2');
       linkIcon.classList.add('js-icon-palette2-color2');
     }
-  } else if (paletteValue === '3') {
+  } else if (checkedPalette === '3') {
    
     cardPreviewText.classList.remove('js-palette1', 'js-palette2');
     cardPreviewText.classList.add('js-palette3');

@@ -39,7 +39,7 @@ function writeImage() {
 }
 
 function updatePhoto() {
-  const currentPhoto = photo || '//beta.adalab.es/resources/images/adalab-logo-128x128.png';
+  const currentPhoto = photo || '/assets/images/animals.gif';
   profilePreview.style.backgroundImage = `url(${currentPhoto})`;
   profileImage.style.backgroundImage = `url(${currentPhoto})`;
 }
