@@ -9,3 +9,9 @@
 
 // ESTOY INTENTANDO QUITAR LOS ÍCONOS SI NO SE UTILIZAN, NO BORRAR AÚN!!
 // https://profileawesome.herokuapp.com/card   link para el share
+
+getFromLocalStorage();
+updateAllInputs();
+handlePalette();
+updatePhoto();
+
