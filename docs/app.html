@@ -25,16 +25,12 @@
   <main class="app">
     <section class="app__card">
         <button class="card__reset js-reset" type="reset"> <i class="far fa-trash-alt"></i><span class="card__reset--text">Reset</span> </button>
-        <div class="card__preview">
+        <div class="card__preview js-card">
           <div class="card__preview--text js-palette1 js-palette resetColorPalette">
             <h3 class="card__preview--text-name js-preview-name previewCardName">Nombre Completo</h3>
             <h4 class="card__preview--text-job js-preview-job">Puesto</h4>
           </div>
-          <img
-            class="card__preview--photo"
-            src="./assets/images/animals.gif"
-            alt="Previsualización foto"
-          />
+          <div class="card__preview--photo js__profile-image"></div>
           <nav class="card__preview--nav">
             <ul class="card__socialmedia">
               <li class="card__socialmedia--item js-border-palette1-color3 opacity">
@@ -73,7 +69,7 @@
           <div class="design__colors  hidden__container">
             <h5 class="design__colors--subtitle">Colores</h5>
             <div class="design__colors--palettes">
-              <div class="palette palette-1">
+              <div class="palette palette1">
                 <label for="palette1">
                   <input
                     id="palette1"
@@ -140,8 +136,9 @@
            
               <label class="fill__form--label" for="image">Imagen de perfil</label>
               <div class="fill__form--image">
-                <button class="fill__form--image--button">Añadir imagen</button>
-              	<div class="fill__form--image--preview"></div>
+                <button class="fill__form--image--button js__profile-trigger">Añadir imagen</button>
+                <input type="file" name="" id="" class="fill__form--image--input js__profile-upload-btn" />
+              	<div class="fill__form--image--preview js__profile-preview"></div>
               </div>
             
               <label class="fill__form--label"for="email">Email</label>
