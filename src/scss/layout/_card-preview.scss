@@ -1,5 +1,6 @@
 .app {
   background-image: linear-gradient(to bottom, $color-bg-1, $color-bg-2);
+  height: 100vh;
 }
 .app__card {
   background: url(../../images/leaves.jpg);
