@@ -8,3 +8,4 @@
 // const socialMediaItem = document.querySelector('.card__socialmedia--item');
 
 // ESTOY INTENTANDO QUITAR LOS ÍCONOS SI NO SE UTILIZAN, NO BORRAR AÚN!!
+// https://profileawesome.herokuapp.com/card   link para el share

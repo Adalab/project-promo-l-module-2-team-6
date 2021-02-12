@@ -79,8 +79,13 @@
                 border: none;
                 font-size: 14px;
             }
+            &--input {
+                display: none;
+            }
             &--preview {
                 width: 30px;
+                height: 30px;
+                background-size: cover;
                 margin-left: 20px;
                 border: solid 1px #a2deaf;
             }
