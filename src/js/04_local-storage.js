@@ -62,12 +62,12 @@ function getFromLocalStorage() {
       }
     }
     // propago los datos desde el formulario a la tarjeta
-
+    updateAllInputs();
     handlePalette();
     updatePhoto();
   }
 }
-updateAllInputs();
+
 /*
 Para actualizar la paleta hay otras dos formas de hacerlo:
 1º Le pongo a cada radio button de las paletas la clase .palette-1, .palette-2 y .palette-3 y ejecuto
