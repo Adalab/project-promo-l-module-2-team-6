@@ -1,16 +1,21 @@
 .main {
   background-color: $color-bg-1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
   border: 1px #d8d8d8;
-  padding: 95px 26px 110px;
+  // padding: 95px 26px 110px;
   height: 100vh;
   
-  @include tablet {
-  padding-top: 350px;
-  }
+  // @include tablet {
+  // padding-bottom: 59px; 
+  // padding: 95px 26px 110px;
+  // }
+
+    @include superdesktop {
+      justify-content: center;
+    }
 
   &__logo {
     width: 250px;
@@ -19,6 +24,12 @@
     @include tablet {
       width: 419px;
       height: 105px;
+      margin-top: 350px;
+    }
+
+    @include superdesktop {
+      width: 509px;
+      height: 152px;
     }
   }
 
@@ -34,6 +45,9 @@
       font-size: 24px;
       margin-top: 31px;
     }
+    @include superdesktop {
+      font-size: 32px;
+    }
   }
 
   &__text {
@@ -44,6 +58,9 @@
 
     @include tablet {
       font-size: 16px;
+    }
+    @include superdesktop {
+      font-size: 24px;
     }
 
     &--span {
@@ -57,13 +74,19 @@
     width: 268px;
     height: 73.8px;
     margin-top: 17.8px;
-    padding: 15px 20px 10px;
+    padding: 15px 20px 17.8px;
 
     @include tablet {
       width: 330px;
       height: 86px;
       margin-top: 27px;
       border-radius: 5px;
+    }
+
+    @include superdesktop {
+      width: 360px;
+      height: 106px;
+      padding-top: 20px;
     }
   }
 
@@ -89,9 +112,17 @@
         height: 61px;
       }
 
+      @include superdesktop {
+        width: 115px;
+      }
+
       &-icon {
         color: $icons;
         font-size: 1.4rem;
+
+          @include superdesktop {
+          font-size: 2.0rem;
+        }
       }
 
       &-text {
@@ -103,6 +134,10 @@
           font-size: 16px;
           font-weight: 400;
           justify-content: space-around;
+        }
+
+        @include superdesktop {
+          font-size: 20px;
         }
       }
     }
@@ -120,12 +155,23 @@
     width: 129px;
     height: 42px;
     margin: 38.6px 0 40px;
-    display: flex;
+    // display: flex;
     padding: 10px 20px;
     border-radius: 21px;
+    &:hover {
+      background: $button-hover;
+      transform: scale(1.05);
+    }
 
     @include tablet {
-      margin-bottom: 59px;  
+      margin: 59px 0 59px;
+    }
+
+    @include superdesktop {
+      font-size: 20px;
+      width: 150px;
+      height: 46px;
+      
     }
   }
 }

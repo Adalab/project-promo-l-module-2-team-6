@@ -8,10 +8,10 @@
         @include tablet {
             padding-left: 40px;
             padding-right: 30px;
-            width: 50vw;
+            // width: 50vw;
         }
         @include desktop {
-            width: 40vw;
+            // width: 40vw;
         }
 
     &__header {
@@ -22,6 +22,11 @@
         color: $smaller-text;
         border-top: $border-lines solid 1px;
         padding-top: 10px;
+        cursor: pointer;
+        :hover {
+        transform: scale(1.01);
+        color: $border;
+    }
         &--icon {
             color: $icons;
             padding-right: 5px;
