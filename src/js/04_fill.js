@@ -1,6 +1,7 @@
+/* eslint-disable quotes */
 'use strict';
 
-const inputsTextConfig = [
+let inputsTextConfig = [
   {
     inputClass: ".js-input-name",
     previewClass: ".js-preview-name",
