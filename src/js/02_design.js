@@ -18,11 +18,10 @@ function handlePalette(ev) {
     cardPreviewText.classList.add('js-palette1');
 
     for (const borderIcon of borderIcons) {
-
       borderIcon.classList.remove('js-border-palette2-color3', 'js-border-palette3-color3');
       borderIcon.classList.add('js-border-palette1-color3');
     }
-    //cambio los 4 iconos
+    
     for (const linkIcon of linkIcons) {
       linkIcon.classList.remove('js-icon-palette3-color2', 'js-icon-palette2-color2');
       linkIcon.classList.add('js-icon-palette1-color2');

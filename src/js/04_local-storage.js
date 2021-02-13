@@ -21,7 +21,7 @@ function saveInLocalStorage() {
   // obtengo los valores de todos los campos
   const userData = {
     photo: photo,
-    palette: document.querySelector('.js-palette').value,
+    palette: document.querySelector('.js-palette:checked').value,
     name: document.querySelector('.js-input-name').value,
     job: document.querySelector('.js-input-job').value,
     email: document.querySelector('.js-input-email').value,
