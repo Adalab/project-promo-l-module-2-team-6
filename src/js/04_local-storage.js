@@ -57,7 +57,7 @@ function getFromLocalStorage() {
     // - A la paleta que tiene el valor correcto le hago un .checked = true para activarla
     const paletteElements = document.querySelectorAll('.js-palette');
     for (const paletteElement of paletteElements) {
-      if (paletteElement.currentvalue === userData.palette) {
+      if (paletteElement.value === userData.palette) {
         paletteElement.checked = true;
       }
     }
