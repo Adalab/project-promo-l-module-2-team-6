@@ -1,99 +1,94 @@
 .fill {
-    padding: 0 19px 0px 20px;
-    border: none;
-    font-family: $font-text;
-    font-size: 14px;
-    line-height: 1.43;
+  padding: 0 19px 0px 20px;
+  border: none;
+  font-family: $font-text;
+  font-size: 14px;
+  line-height: 1.43;
 
-        @include tablet {
-            padding-left: 40px;
-            padding-right: 30px;
-            width: 50vw;
-        }
-        @include desktop {
-            width: 40vw;
-        }
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 50vw;
+  }
+  @include desktop {
+    width: 40vw;
+  }
 
-    &__header {
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: $smaller-text;
-        border-top: $border-lines solid 1px;
-        padding-top: 10px;
-        &--icon {
-            color: $icons;
-            padding-right: 5px;
-        }
-        &--title {
-            text-transform: uppercase;
-            font-size: 18px;
-            font-family: $font-text;
-            font-weight: 600;
-        }
-        &--arrow {
-            font-size: 18px;
-        }
+  &__header {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $smaller-text;
+    border-top: $border-lines solid 1px;
+    padding-top: 10px;
+    &--icon {
+      color: $icons;
+      padding-right: 5px;
     }
-
-    &__form {
-        display: flex;
-        flex-direction: column;
-        border-bottom: $border-lines solid 1px;
-        color: $main-text;
-        padding-top: 15px;
-        &--label {
-            margin-top: -10px;
-            margin-bottom: 7px;
-        }
-        &--input {
-            height: 30px;
-            border: solid 1px $border;
-            padding-left: 3px;
-            margin-bottom: 30px;
-
-            @include tablet {
-                width: 100%;
-            }
-        }
-            ::placeholder {
-                font-size: 14px;
-                color: $placeholder;
-                font-family: $font-text;
-            }
-            :focus {
-                outline: 0 none;
-                border: 3px solid #a2deaf;
-            }
-        &--image {
-            display: flex;
-            margin-bottom: 30px;
-
-            &--button {
-                width: 140px;
-                height: 30px;
-                color: $color-bg-2;
-                background: $icons;
-                border-radius: 3px;
-                border: none;
-                font-size: 14px;
-            }
-            &--input {
-                display: none;
-            }
-            &--preview {
-                width: 30px;
-                height: 30px;
-                background-size: cover;
-                margin-left: 20px;
-                border: solid 1px #a2deaf;
-            }
-        }
-
-        // @include tablet {
-        //     width: 40vw;
-        // }
+    &--title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $font-text;
+      font-weight: 600;
     }
+    &--arrow {
+      font-size: 18px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    border-bottom: $border-lines solid 1px;
+    color: $main-text;
+    padding-top: 15px;
+    &--label {
+      margin-top: -10px;
+      margin-bottom: 7px;
+    }
+    &--input {
+      height: 30px;
+      border: solid 1px $border;
+      padding-left: 3px;
+      margin-bottom: 30px;
+
+      @include tablet {
+        width: 100%;
+      }
+    }
+    ::placeholder {
+      font-size: 14px;
+      color: $placeholder;
+      font-family: $font-text;
+    }
+    :focus {
+      outline: 0 none;
+      border: 3px solid #a2deaf;
+    }
+    &--image {
+      display: flex;
+      margin-bottom: 30px;
+
+      &--button {
+        width: 140px;
+        height: 30px;
+        color: $color-bg-2;
+        background: $icons;
+        border-radius: 3px;
+        border: none;
+        font-size: 14px;
+      }
+      &--input {
+        display: none;
+      }
+      &--preview {
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        margin-left: 20px;
+        border: solid 1px #a2deaf;
+      }
+    }
+  }
 }
-

@@ -8,9 +8,9 @@
   padding: 95px 26px 110px;
   height: 100vh;
   overflow: auto;
-  
+
   @include tablet {
-  padding-top: 350px;
+    padding-top: 350px;
   }
 
   &__logo {
@@ -126,7 +126,7 @@
     border-radius: 21px;
 
     @include tablet {
-      margin-bottom: 59px;  
+      margin-bottom: 59px;
     }
   }
 }

@@ -9,7 +9,7 @@
   }
   @include desktop {
     width: 40vw;
-}
+  }
   &__header {
     padding-bottom: 10px;
     display: flex;
@@ -30,7 +30,7 @@
   &__colors {
     display: flex;
     padding-top: 22px;
-    
+
     &--subtitle {
       padding-left: 19px;
       font-size: 14px;

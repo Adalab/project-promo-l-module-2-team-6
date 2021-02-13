@@ -67,7 +67,7 @@ function updateAllInputs() {
     } else if (inputTextConfig.previewElementAttribute === "href") {
       if (inputElement.value === "") {
         newValue = "#";
-        
+
       } else {
         newValue = newValue.replace(inputTextConfig.previewPrefix, "");
         newValue = inputTextConfig.previewPrefix + newValue;

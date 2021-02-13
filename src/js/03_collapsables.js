@@ -6,7 +6,7 @@ for (const collapsableHeader of collapsableHeaders) {
   collapsableHeader.addEventListener('click', switchCollapsable);
 }
 
-function switchCollapsable (ev) {
+function switchCollapsable(ev) {
   const clickedHeader = ev.currentTarget;
   const clickedCollapsable = clickedHeader.parentNode;
 

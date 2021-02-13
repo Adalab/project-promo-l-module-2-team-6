@@ -1,57 +1,57 @@
 .share {
-    padding: 0 19px 30px 20px;
-    border: none;
+  padding: 0 19px 30px 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    padding-left: 40px;
+    padding-right: 30px;
+    width: 50vw;
+  }
+  @include desktop {
+    width: 40vw;
+  }
+
+  &__header {
+    margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $smaller-text;
+    border-top: $border-lines solid 1px;
+    padding-top: 10px;
+    &--icon {
+      color: $icons;
+      padding-right: 5px;
+    }
+    &--title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $font-text;
+      font-weight: 600;
+    }
+    &--arrow {
+      font-size: 18px;
+    }
+  }
 
+  &__button {
+    display: flex;
+    border-bottom: $border-lines solid 1px;
+    &--create {
+      width: 199px;
+      height: 50px;
+      border-radius: 12px;
+      background: $icons;
+      color: $color-bg-2;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin: 0 0 30px 38px;
+    }
     @include tablet {
-        padding-left: 40px;
-        padding-right: 30px;
-        width: 50vw;
+      padding-left: 65px;
     }
-    @include desktop {
-        width: 40vw;
-    }
-
-    &__header {
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: $smaller-text;
-        border-top: $border-lines solid 1px;
-        padding-top: 10px;
-        &--icon {
-            color: $icons;
-            padding-right: 5px;
-        }
-        &--title {
-            text-transform: uppercase;
-            font-size: 18px;
-            font-family: $font-text;
-            font-weight: 600;
-        }
-         &--arrow {
-             font-size: 18px;
-         }
-    }
-
-    &__button {
-        display: flex;
-        border-bottom: $border-lines solid 1px;
-        &--create {
-            width: 199px;
-            height: 50px;
-            border-radius: 12px;
-            background: $icons;
-            color: $color-bg-2;
-            font-size: 18px;
-            font-weight: 600;
-            text-transform: uppercase;
-            margin: 0 0 30px 38px;
-        }
-        @include tablet {
-            padding-left: 65px;
-        }
-    }
+  }
 }
