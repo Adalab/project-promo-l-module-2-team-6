@@ -52,9 +52,7 @@ function updateAllInputs() {
     const previewElement = document.querySelector(inputTextConfig.previewClass);
     const defaultElement = "";
     const previewPrefixElement = "";
-    const attributeElement = document.querySelector(
-      inputTextConfig.previewElementAttribute
-    );
+    const attributeElement = document.querySelector(inputTextConfig.previewElementAttribute);
 
     let newValue = inputElement.value;
 
@@ -76,12 +74,11 @@ function updateAllInputs() {
       previewElement.href = newValue;
     }
   }
+saveInLocalStorage();
 }
 
 const inputTextElements = document.querySelectorAll(".js-input-text");
 for (const inputTextElement of inputTextElements) {
   inputTextElement.addEventListener("keyup", updateAllInputs);
 }
-
-updateAllInputs();
 

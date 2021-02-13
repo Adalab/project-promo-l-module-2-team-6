@@ -15,11 +15,11 @@ const resetLocalStorage = () => {
 };
 
 
-const resetCard = () => {
-  inputsTextConfig = [];
-  updateAllInputs();
-  resetLocalStorage();
-};
+// const resetCard = () => {
+//   let inputsTextConfig = [];
+//   updateAllInputs();
+//   resetLocalStorage();
+// };
 
 // EVENTO
-resetButton.addEventListener('click', resetCard);
+// resetButton.addEventListener('click', resetCard);
