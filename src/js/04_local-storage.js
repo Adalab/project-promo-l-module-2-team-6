@@ -80,3 +80,4 @@ Por ello en la función getFromLocalStorage podría haber usado :
 document.querySelector(`.js-palette[value="${userData.palette}"]`).checked = true;
 Más info de selectores de atributos: https://developer.mozilla.org/es/docs/Web/CSS/Selectores_atributo
 */
+
