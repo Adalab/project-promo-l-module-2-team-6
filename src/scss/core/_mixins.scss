@@ -9,3 +9,9 @@
     @content;
   }
 }
+
+@mixin superdesktop {
+    @media all and (min-width: 1500px) {
+        @content;
+    }
+}

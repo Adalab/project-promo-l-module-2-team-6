@@ -3,14 +3,16 @@
   border: none;
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   @include tablet {
     padding-left: 40px;
     padding-right: 30px;
-    width: 50vw;
+    // width: 50vw;
   }
+
   @include desktop {
-    width: 40vw;
+    // width: 40vw;
   }
 
   &__header {
@@ -21,16 +23,24 @@
     color: $smaller-text;
     border-top: $border-lines solid 1px;
     padding-top: 10px;
+
+    :hover {
+      transform: scale(1.01);
+      color: $border;
+    }
+
     &--icon {
       color: $icons;
       padding-right: 5px;
     }
+
     &--title {
       text-transform: uppercase;
       font-size: 18px;
       font-family: $font-text;
       font-weight: 600;
     }
+
     &--arrow {
       font-size: 18px;
     }
@@ -39,6 +49,7 @@
   &__button {
     display: flex;
     border-bottom: $border-lines solid 1px;
+
     &--create {
       width: 199px;
       height: 50px;
@@ -49,7 +60,9 @@
       font-weight: 600;
       text-transform: uppercase;
       margin: 0 0 30px 38px;
+      cursor: pointer;
     }
+
     @include tablet {
       padding-left: 65px;
     }

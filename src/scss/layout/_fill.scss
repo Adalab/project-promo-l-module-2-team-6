@@ -8,10 +8,11 @@
   @include tablet {
     padding-left: 40px;
     padding-right: 30px;
-    width: 50vw;
+    // width: 50vw;
   }
+
   @include desktop {
-    width: 40vw;
+    // width: 40vw;
   }
 
   &__header {
@@ -22,16 +23,36 @@
     color: $smaller-text;
     border-top: $border-lines solid 1px;
     padding-top: 10px;
+    cursor: pointer;
+
+    :hover {
+      transform: scale(1.01);
+      color: $border;
+    }
+
     &--icon {
       color: $icons;
       padding-right: 5px;
     }
+
     &--title {
       text-transform: uppercase;
       font-size: 18px;
       font-family: $font-text;
       font-weight: 600;
     }
+
+    &--arrow {
+      font-size: 18px;
+    }
+
+    &--title {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: $font-text;
+      font-weight: 600;
+    }
+
     &--arrow {
       font-size: 18px;
     }
@@ -43,10 +64,12 @@
     border-bottom: $border-lines solid 1px;
     color: $main-text;
     padding-top: 15px;
+
     &--label {
       margin-top: -10px;
       margin-bottom: 7px;
     }
+
     &--input {
       height: 30px;
       border: solid 1px $border;
@@ -57,15 +80,18 @@
         width: 100%;
       }
     }
+
     ::placeholder {
       font-size: 14px;
       color: $placeholder;
       font-family: $font-text;
     }
+
     :focus {
       outline: 0 none;
       border: 3px solid #a2deaf;
     }
+
     &--image {
       display: flex;
       margin-bottom: 30px;
@@ -79,9 +105,11 @@
         border: none;
         font-size: 14px;
       }
+
       &--input {
         display: none;
       }
+
       &--preview {
         width: 30px;
         height: 30px;
