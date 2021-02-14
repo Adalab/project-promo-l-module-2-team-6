@@ -3,6 +3,7 @@
 const createBtn = document.querySelector('.js-create-btn');
 const cardResult = document.querySelector('.js-shareclick');
 const shareHidden = document.querySelector('.js-share-hidden');
+const formSubmit = document.querySelector('.js-submit');
 
 const twitterHiddenElement = document.querySelector('.js-twitter-share');
 
@@ -14,13 +15,14 @@ function handleCreateBtn(ev) {
   fetchAPI();
 
   shareHidden.classList.remove('js-share-hidden');
-  createBtn.classList.remove('share__button');
-  createBtn.classList.add('share__button--dis');
+  createBtn.classList.remove('js-create-hidden');
+  createBtn.classList.add('js-create-hidden');
   createBtn.disabled = true;
   twitterHiddenElement.classList.remove('hidden-share');
 }
 
 createBtn.addEventListener('click', handleCreateBtn);
+formSubmit.addEventListener('submit', handleCreateBtn);
 
 function fetchAPI() {
   const url = 'https://profileawesome.herokuapp.com/card';
