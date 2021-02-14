@@ -75,6 +75,10 @@
     font-family: $font-card;
   }
 }
+.pale_icon {
+ opacity: 0.2; 
+}
+
 .js-palette1 {
   border-left: 5px solid $palette-1-2;
   color: $palette-1-1;

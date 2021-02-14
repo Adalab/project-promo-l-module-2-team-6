@@ -25,11 +25,8 @@ function reset() {
     cardImage.style.backgroundImage = "url(./assets/images/animals.gif)";
     previewImage.style.backgroundImage = "";
     resetLocalStorage();
-    
-    // showGithub();
-    // showLinkedin();
-    // showPhone();
-    // showEmail();
+
+
 };
 
 function resetLocalStorage() {
@@ -41,6 +38,11 @@ function resetLocalStorage() {
     localStorage.clear('email');
     localStorage.clear('linkedin');
     localStorage.clear('github');
+
+    showGithub();
+    showLinkedin();
+    showPhone();
+    showEmail();
 }
 
 resetButton.addEventListener('click', reset);
