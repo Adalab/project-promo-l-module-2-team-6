@@ -26,8 +26,8 @@
     cursor: pointer;
 
     :hover {
-      transform: scale(1.01);
-      color: $border;
+      transform: scale(1.04);
+      color: $button-hover;
     }
 
     &--icon {
@@ -104,6 +104,12 @@
         border-radius: 3px;
         border: none;
         font-size: 14px;
+        text-align: center;
+        padding-top: 3px;
+        cursor: pointer;
+        &:hover{
+          background: $button-hover;
+        }
       }
 
       &--input {
