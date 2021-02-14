@@ -15,7 +15,6 @@ function handleCreateBtn(ev) {
   fetchAPI();
 
   shareHidden.classList.remove('js-share-hidden');
-  createBtn.classList.remove('js-create-hidden');
   createBtn.classList.add('js-create-hidden');
   createBtn.disabled = true;
   twitterHiddenElement.classList.remove('hidden-share');
