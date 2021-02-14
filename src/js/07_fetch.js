@@ -1,33 +1,46 @@
 'use strict';
 
 const createBtn = document.querySelector('.js-create-btn');
-const cardResultElement = document.querySelector('.js-share-link');
-const shareHiddenElement = document.querySelector('.js-share-hidden');
+const cardResult = document.querySelector('.js-shareclick');
+
+const twitterHiddenElement = document.querySelector('.js-twitter-share');
+
+let shareLink = '';
 
 function handleCreateBtn(ev) {
-  shareHiddenElement.classList.remove('js-share-hidden');
   ev.preventDefault();
-  console.log('Mis datos', getUserData());
 
-  const url = 'https://us-central1-awesome-cards-cf6f0.cloudfunctions.net/card/';
-  const data = getUserData();
+  fetchAPI();
 
+  createBtn.classList.remove('share__button');
+  createBtn.classList.add('share__button--dis');
+  createBtn.disabled = true;
+  twitterHiddenElement.classList.remove('hidden-share');
+}
+
+createBtn.addEventListener('click', handleCreateBtn);
+
+function fetchAPI() {
+  const url = 'https://profileawesome.herokuapp.com/card';
+  // eslint-disable-next-line no-undef
+  const data = saveInLocalStorage();
   fetch(url, {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
-      'Content-Type': 'application/json'
-    }
+      'Content-Type': 'application/json',
+    },
   })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Server response:', data);
+    .then((response) => response.json())
+    .then((data) => {
+      // console.log('Server response:', data);
       if (data.success === true) {
-        cardResultElement.innerHTML = data.cardURL;
+        data.cardURL;
+        shareLink = data.cardURL;
+        const linkElement = document.querySelector('.js-card-link');
+        linkElement.innerHTML = `<a href="${shareLink}" class="shareclick__text js-shareclick" target="_blank">${shareLink}</a>;`;
       } else {
-        cardResultElement.innerHTML = data.error;
+        cardResult.innerHTML = data.error;
       }
     });
 }
-
-createBtn.addEventListener('click', handleCreateBtn);
