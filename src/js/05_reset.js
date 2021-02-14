@@ -26,10 +26,10 @@ function reset() {
     previewImage.style.backgroundImage = "";
     resetLocalStorage();
     
-    showGithub();
-    showLinkedin();
-    showPhone();
-    showEmail();
+    // showGithub();
+    // showLinkedin();
+    // showPhone();
+    // showEmail();
 };
 
 function resetLocalStorage() {
