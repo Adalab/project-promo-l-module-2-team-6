@@ -1,27 +1,36 @@
 ![](https://github.com/Adalab/project-promo-l-module-2-team-6/blob/master/src/images/logo-treehuggers.png)
 
-# Customizable Digital Business Cards Generator 
+# Generador de Tarjetas Digitales Personalizables
 
+## Descripción del proyecto 
 
-## Quick start guide
+Este proyecto consiste en realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. El proyecto consta de 2 páginas:
+- Una página landing de bienvenida.
+- Una página con la aplicación de crear tarjetas.
 
-> **NOTE:** You need to have [Node JS](https://nodejs.org/) installed to work with this repository.
+## Guía de inicio rápido 
 
-### Instalation Steps: 
+> **NOTA:** Necesitas tener [Node JS](https://nodejs.org/) instalado para trabajar con este repositorio.
 
-1. **Download or clone this repository**  
+### Pasos de instalación: 
+
+1. **Descargar o clonar este repositorio**  
 ```
 $ git clone https://github.com/Adalab/project-promo-l-module-2-team-6.git
 ```
-2. **Open the project in your code editor (i.e. Visual Sudio Code)**
+2. **Abrir el proyecto en tu editor de código (i.e. Visual Sudio Code)**
 
-3. **Install the local dependencies**
+3. **Instalar las depencias locales**
 ```
 $ npm install
 ```
-4. **Start the project:** (The project must be started every time you start programming)
+4. **Iniciar el proyecto:** (El proyecto debe iniciarse cada vez que comience a programar)
 ```
 $ npm start
+```
+5. **Publicar el proyecto a producción:**
+```
+$ npm run docs
 ```
 
 ## Folder structure
