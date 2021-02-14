@@ -63,7 +63,12 @@
     flex-direction: column;
     border-bottom: $border-lines solid 1px;
     color: $main-text;
-    padding-top: 15px;
+    // padding-top: 15px;
+
+    &--notice {
+      padding-bottom: 20px;
+      color: $footer-text;
+    }
 
     &--label {
       margin-top: -10px;

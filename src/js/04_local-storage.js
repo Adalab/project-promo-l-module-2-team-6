@@ -15,23 +15,24 @@ Recuperar del local storage:
 - 4º En este proyecto en concreto los ponemos en el formulario
 - 5º Llamamos a las funciones que replican los datos desde el formulario a la tarjeta
 */
+function getUserData () {
+return {
+  photo: photo,
+  palette: document.querySelector('.js-palette:checked').value,
+  name: document.querySelector('.js-input-name').value,
+  job: document.querySelector('.js-input-job').value,
+  email: document.querySelector('.js-input-email').value,
+  phone: document.querySelector('.js-input-phone').value,
+  linkedin: document.querySelector('.js-input-linkedin').value,
+  github: document.querySelector('.js-input-github').value
+};
+}
 
-// cuando la usuaria cambia cualquier cosa en el formulario debemos llamar a esta función
+
 function saveInLocalStorage() {
-  // obtengo los valores de todos los campos
-  const userData = {
-    photo: photo,
-    palette: document.querySelector('.js-palette:checked').value,
-    name: document.querySelector('.js-input-name').value,
-    job: document.querySelector('.js-input-job').value,
-    email: document.querySelector('.js-input-email').value,
-    phone: document.querySelector('.js-input-phone').value,
-    linkedin: document.querySelector('.js-input-linkedin').value,
-    github: document.querySelector('.js-input-github').value
-  };
-  // lo convierto a string porque local storage solo admite strings
+  const userData = getUserData();
   const userDataInString = JSON.stringify(userData);
-  // lo guardo en el local storage en el campo que me apetece
+
   localStorage.setItem('userData', userDataInString);
 }
 

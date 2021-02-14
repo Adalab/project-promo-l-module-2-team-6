@@ -1,14 +1,21 @@
-<fieldset class="share js-collapsable-container collapsable--close">
+<fieldset class="share js-collapsable-container">
   <div class="share__header js-collapsable-header">
     <h2 class="share__header--title">
-      <i class="fas fa-share-alt share__header--icon js-arrow-share js-arrow-up"></i>
+      <i
+        class="fas fa-share-alt share__header--icon js-arrow-share js-arrow-up"
+      ></i>
       Comparte
     </h2>
-    <i class="fas fa-chevron-up share__header--arrow"></i>
+    <img class="up-icon" src="./assets/images/monstera.png" />
   </div>
 
-  <div class="share__create">
-    <button class="share__create--button js-create-btn" type="submit" name="submit" id="submit">
+  <div class="share__create hidden__container">
+    <button
+      class="share__create--button js-create-btn"
+      type="submit"
+      name="submit"
+      id="submit"
+    >
       <i class="far fa-address-card share__button--icon"></i>
       Crear tarjeta
     </button>
@@ -20,10 +27,13 @@
 
     <button class="share__result--twitter js-twitter-btn" type="button">
       <i class="fab fa-twitter share__result--twitter_icon"></i>
-      <a href="" class="share__result--twitterlink js-twitter-link" data-show-count="false" target="_blank">Compartir
-        en twitter
+      <a
+        href=""
+        class="share__result--twitterlink js-twitter-link"
+        data-show-count="false"
+        target="_blank"
+        >Compartir en twitter
       </a>
     </button>
-
   </div>
 </fieldset>

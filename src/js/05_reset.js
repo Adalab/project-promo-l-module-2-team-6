@@ -12,7 +12,7 @@ const previewImage = document.querySelector(".js__profile-preview");
 
 const form = document.querySelectorAll(".js-form");
 
-function reset() {
+function reset(ev) {
     for (let i = 0; i < form.length; i++) {
         form[i].value = '';
     }
@@ -25,14 +25,13 @@ function reset() {
     cardImage.style.backgroundImage = "url(./assets/images/animals.gif)";
     previewImage.style.backgroundImage = "";
     resetLocalStorage();
-    
     // showGithub();
     // showLinkedin();
     // showPhone();
     // showEmail();
 };
 
-function resetLocalStorage() {
+function resetLocalStorage(ev) {
     localStorage.clear('js-palette');
     localStorage.clear('js-preview-name');
     localStorage.clear('js-preview-job');
@@ -42,5 +41,12 @@ function resetLocalStorage() {
     localStorage.clear('linkedin');
     localStorage.clear('github');
 }
+
+// function clearShare() {
+//   shareHidden.disabled = false;
+//   shareHidden.classList.add('js-share-hidden');
+//   twitterHiddenElement.classList.add('hidden-share');
+//   createBtn.classList.remove('js-create-hidden');
+// }
 
 resetButton.addEventListener('click', reset);
