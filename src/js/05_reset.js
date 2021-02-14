@@ -26,11 +26,11 @@ function reset(ev) {
     previewImage.style.backgroundImage = "";
     resetLocalStorage();
     clearShare();
-    
-    // showGithub();
-    // showLinkedin();
-    // showPhone();
-    // showEmail();
+    showGithub();
+    showLinkedin();
+    showPhone();
+    showEmail();
+
 };
 
 function resetLocalStorage(ev) {
@@ -42,6 +42,7 @@ function resetLocalStorage(ev) {
     localStorage.clear('email');
     localStorage.clear('linkedin');
     localStorage.clear('github');
+
 }
 
 function clearShare() {

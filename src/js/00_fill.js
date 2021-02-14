@@ -75,6 +75,10 @@ function updateAllInputs() {
     }
   }
 saveInLocalStorage();
+showGithub();
+showLinkedin();
+showPhone();
+showEmail();
 }
 
 const inputTextElements = document.querySelectorAll(".js-input-text");
@@ -83,29 +87,29 @@ for (const inputTextElement of inputTextElements) {
 }
 
 
-// show only used icons ---------------------------------------------------------------------------------
+const phoneIcon = document.querySelector('.js-phone');
+const emailIcon = document.querySelector('.js-email');
+const linkedinIcon = document.querySelector('.js-linkedin');
+const githubIcon = document.querySelector('.js-github');
 
-// const phoneIcon = document.querySelector('.js-phone');
-// const emailIcon = document.querySelector('.js-email');
-// const linkedinIcon = document.querySelector('.js-linkedin');
-// const githubIcon = document.querySelector('.js-github');
+const phoneInput = document.querySelector('.js-input-phone');
+const emailInput = document.querySelector('.js-input-email');
+const linkedinInput = document.querySelector('.js-input-linkedin');
+const githubInput = document.querySelector('.js-input-github');
 
-// const phoneInput = document.querySelector('.js-input-phone');
-// const emailInput = document.querySelector('.js-input-email');
-// const linkedinInput = document.querySelector('.js-input-linkedin');
-// const githubInput = document.querySelector('.js-input-github');
+const showPhone = () => phoneInput.value.length !== 0 ? phoneIcon.classList.remove('pale_icon') : phoneIcon.classList.add('pale_icon');
+phoneInput.addEventListener('keyup', showPhone);
 
-// // ---------------
+const showEmail = () => emailInput.value.length !== 0 ? emailIcon.classList.remove('pale_icon') : emailIcon.classList.add('pale_icon');
+emailInput.addEventListener('keyup', showEmail);
 
-// const showPhone = () => phoneInput.value.length !== 0 ? phoneIcon.classList.remove('hidden_icon') : phoneIcon.classList.add('hidden_icon');
-// phoneInput.addEventListener('keyup', showPhone);
+const showLinkedin =  () => linkedinInput.value.length !== 0 ? linkedinIcon.classList.remove('pale_icon') : linkedinIcon.classList.add('pale_icon');
+linkedinInput.addEventListener('keyup', showLinkedin);
 
-// const showEmail = () => emailInput.value.length !== 0 ? emailIcon.classList.remove('hidden_icon') : emailIcon.classList.add('hidden_icon');
-// emailInput.addEventListener('keyup', showEmail);
+const showGithub =  () => githubInput.value.length !== 0 ? githubIcon.classList.remove('pale_icon') : githubIcon.classList.add('pale_icon');
+githubInput.addEventListener('keyup', showGithub);
 
-// const showLinkedin =  () => linkedinInput.value.length !== 0 ? linkedinIcon.classList.remove('hidden_icon') : linkedinIcon.classList.add('hidden_icon');
-// linkedinInput.addEventListener('keyup', showLinkedin);
-
-// const showGithub =  () => githubInput.value.length !== 0 ? githubIcon.classList.remove('hidden_icon') : githubIcon.classList.add('hidden_icon');
-// githubInput.addEventListener('keyup', showGithub);
-
+showGithub();
+showLinkedin();
+showPhone();
+showEmail();
