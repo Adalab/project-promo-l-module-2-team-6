@@ -2,6 +2,7 @@
 
 const createBtn = document.querySelector('.js-create-btn');
 const cardResult = document.querySelector('.js-shareclick');
+const shareHidden = document.querySelector('.js-share-hidden');
 
 const twitterHiddenElement = document.querySelector('.js-twitter-share');
 
@@ -12,6 +13,7 @@ function handleCreateBtn(ev) {
 
   fetchAPI();
 
+  shareHidden.classList.remove('js-share-hidden');
   createBtn.classList.remove('share__button');
   createBtn.classList.add('share__button--dis');
   createBtn.disabled = true;
@@ -38,7 +40,7 @@ function fetchAPI() {
         data.cardURL;
         shareLink = data.cardURL;
         const linkElement = document.querySelector('.js-card-link');
-        linkElement.innerHTML = `<a href="${shareLink}" class="shareclick__text js-shareclick" target="_blank">${shareLink}</a>;`;
+        linkElement.innerHTML = `<a href="${shareLink}" class="share__result--link js-shareclick" target="_blank">${shareLink}</a>;`;
       } else {
         cardResult.innerHTML = data.error;
       }
