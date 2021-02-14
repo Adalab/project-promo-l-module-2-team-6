@@ -2,8 +2,10 @@
 
 const createBtn = document.querySelector('.js-create-btn');
 const cardResultElement = document.querySelector('.js-share-link');
+const shareHiddenElement = document.querySelector('.js-share-hidden');
 
 function handleCreateBtn(ev) {
+  shareHiddenElement.classList.remove('js-share-hidden');
   ev.preventDefault();
   console.log('Mis datos', getUserData());
 
