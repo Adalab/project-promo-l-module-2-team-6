@@ -1,12 +1,12 @@
 
-// 'use strict';
+'use strict';
 
-// // prevenimos el envío del formulario
+// prevenimos el envío del formulario
 
-// const formElement = document.querySelector('.js-submit');
+const formElement = document.querySelector('.js-submit');
 
-// function handleSubmit(ev) {
-//   ev.preventDefault();
-// }
+function handleSubmit(ev) {
+  ev.preventDefault();
+}
 
-// formElement.addEventListener('submit', handleSubmit);
+formElement.addEventListener('submit', handleSubmit);

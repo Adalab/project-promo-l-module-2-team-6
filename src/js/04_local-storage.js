@@ -57,7 +57,7 @@ function getFromLocalStorage() {
     // - A la paleta que tiene el valor correcto le hago un .checked = true para activarla
     const paletteElements = document.querySelectorAll('.js-palette');
     for (const paletteElement of paletteElements) {
-      if (paletteElement.currentvalue === userData.palette) {
+      if (paletteElement.value === userData.palette) {
         paletteElement.checked = true;
       }
     }
@@ -80,3 +80,4 @@ Por ello en la función getFromLocalStorage podría haber usado :
 document.querySelector(`.js-palette[value="${userData.palette}"]`).checked = true;
 Más info de selectores de atributos: https://developer.mozilla.org/es/docs/Web/CSS/Selectores_atributo
 */
+
