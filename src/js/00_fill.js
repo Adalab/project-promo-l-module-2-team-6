@@ -97,16 +97,15 @@ const githubInput = document.querySelector('.js-input-github');
 
 // ---------------
 
-const showEmail = () => emailIcon.value.length !== 0 ? emailIcon.classList.remove('hidden_icon') : emailIcon.classList.add('hidden_icon');
-emailInput.addEventListener('keypress', showEmail);
-console.log('me han clickado')
-
 const showPhone = () => phoneInput.value.length !== 0 ? phoneIcon.classList.remove('hidden_icon') : phoneIcon.classList.add('hidden_icon');
-phoneInput.addEventListener('keypress', showPhone);
+phoneInput.addEventListener('keyup', showPhone);
+
+const showEmail = () => emailInput.value.length !== 0 ? emailIcon.classList.remove('hidden_icon') : emailIcon.classList.add('hidden_icon');
+emailInput.addEventListener('keyup', showEmail);
 
 const showLinkedin =  () => linkedinInput.value.length !== 0 ? linkedinIcon.classList.remove('hidden_icon') : linkedinIcon.classList.add('hidden_icon');
-linkedinInput.addEventListener('keypress', showLinkedin);
+linkedinInput.addEventListener('keyup', showLinkedin);
 
 const showGithub =  () => githubInput.value.length !== 0 ? githubIcon.classList.remove('hidden_icon') : githubIcon.classList.add('hidden_icon');
-githubInput.addEventListener('keypress', showGithub);
+githubInput.addEventListener('keyup', showGithub);
 
