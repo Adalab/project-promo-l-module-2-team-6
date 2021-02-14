@@ -25,6 +25,8 @@ function reset(ev) {
     cardImage.style.backgroundImage = "url(./assets/images/animals.gif)";
     previewImage.style.backgroundImage = "";
     resetLocalStorage();
+    clearShare();
+    
     // showGithub();
     // showLinkedin();
     // showPhone();
@@ -42,11 +44,11 @@ function resetLocalStorage(ev) {
     localStorage.clear('github');
 }
 
-// function clearShare() {
-//   shareHidden.disabled = false;
-//   shareHidden.classList.add('js-share-hidden');
-//   twitterHiddenElement.classList.add('hidden-share');
-//   createBtn.classList.remove('js-create-hidden');
-// }
+function clearShare() {
+  createBtn.disabled = false;
+  shareHidden.classList.add('js-share-hidden');
+  twitterHiddenElement.classList.add('hidden-share');
+  createBtn.classList.remove('js-create-hidden');
+}
 
 resetButton.addEventListener('click', reset);
