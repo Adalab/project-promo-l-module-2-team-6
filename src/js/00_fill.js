@@ -75,6 +75,10 @@ function updateAllInputs() {
     }
   }
 saveInLocalStorage();
+showGithub();
+showLinkedin();
+showPhone();
+showEmail();
 }
 
 const inputTextElements = document.querySelectorAll(".js-input-text");

@@ -1,8 +1,9 @@
 'use strict';
 
 const createBtn = document.querySelector('.js-create-btn');
-const cardResult = document.querySelector('.js-shareclick');
+const cardResult = document.querySelector('.js-card-link');
 const shareHidden = document.querySelector('.js-share-hidden');
+const formSubmit = document.querySelector('.js-submit');
 
 const twitterHiddenElement = document.querySelector('.js-twitter-share');
 
@@ -14,13 +15,14 @@ function handleCreateBtn(ev) {
   fetchAPI();
 
   shareHidden.classList.remove('js-share-hidden');
-  createBtn.classList.remove('share__button');
-  createBtn.classList.add('share__button--dis');
+  createBtn.classList.remove('js-create-hidden');
+  createBtn.classList.add('js-create-hidden');
   createBtn.disabled = true;
   twitterHiddenElement.classList.remove('hidden-share');
 }
 
 createBtn.addEventListener('click', handleCreateBtn);
+formSubmit.addEventListener('submit', handleCreateBtn);
 
 function fetchAPI() {
   const url = 'https://profileawesome.herokuapp.com/card';
@@ -35,14 +37,13 @@ function fetchAPI() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log('Server response:', data);
       if (data.success === true) {
         data.cardURL;
         shareLink = data.cardURL;
         const linkElement = document.querySelector('.js-card-link');
-        linkElement.innerHTML = `<a href="${shareLink}" class="share__result--link js-shareclick" target="_blank">${shareLink}</a>;`;
+        linkElement.innerHTML = `<a href="${shareLink}" class="share__result--link js-card-link" target="_blank">${shareLink}</a>;`;
       } else {
-        cardResult.innerHTML = data.error;
+        cardResult.innerHTML = 'Debes cumplimentar todos los campos para poder crear tu enlace';
       }
     });
 }
