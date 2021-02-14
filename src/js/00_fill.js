@@ -27,7 +27,7 @@ let inputsTextConfig = [
     inputClass: ".js-input-phone",
     previewClass: ".js-preview-phone",
     defaultValue: "",
-    previewPrefix: "",
+    previewPrefix: "tel:",
     previewElementAttribute: "href",
   },
   {
