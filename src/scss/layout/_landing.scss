@@ -1,5 +1,5 @@
 .main {
-  background-color: $color-bg-1;
+  background: url(../images/leaves.jpg) no-repeat center;
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -70,6 +70,7 @@
 
   &__section {
     border: solid rgba(225, 115, 52, 0.21) 1.6px;
+    background-color: white;
     border-radius: 4px;
     width: 268px;
     height: 73.8px;
