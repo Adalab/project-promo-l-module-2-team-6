@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="./assets/css/pages/app.css" />
-    <link rel="icon" href="./assets/images/minitree.png" />
+    <link rel="icon" href="./assets/images/favicon.png" />
     <title>Create your own card</title>
   </head>
   <body>
@@ -86,7 +86,7 @@
               <h2 class="design__header--text">
                 <i class="design__header--text-icon far fa-object-ungroup"></i>Diseña
               </h2>
-              <i class="up-icon fas fa-chevron-up"></i>
+              <img class="up-icon" src="./assets/images/monstera.png" />
             </div>
             <div class="design__colors hidden__container">
               <h5 class="design__colors--subtitle">Colores</h5>
@@ -144,9 +144,10 @@
                 <i class="far fa-keyboard fill__header--icon"></i>
                 Rellena
               </h2>
-              <i class="fas fa-chevron-up fill__header--arrow"></i>
+              <img class="up-icon" src="./assets/images/monstera.png" />
             </div>
             <div class="fill__form hidden__container">
+              <h6 class="fill__form--notice">Todos los campos son obligatorios</h6>
               <label class="fill__form--label userName" for="name">Nombre completo</label>
               <input
                 class="fill__form--input js-input-name js-input-text js-form"
@@ -203,6 +204,7 @@
                 id="linkedin"
                 name="linkedin"
                 placeholder="Ej: linkedin.com/in/nombre"
+                required
               />
               <label class="fill__form--label" for="github">Github</label>
               <input
@@ -211,6 +213,7 @@
                 id="github"
                 name="github"
                 placeholder="Ej: @nombre"
+                required
               />
             </div>
           </fieldset>
@@ -218,14 +221,21 @@
           <fieldset class="share js-collapsable-container collapsable--close">
             <div class="share__header js-collapsable-header">
               <h2 class="share__header--title">
-                <i class="fas fa-share-alt share__header--icon js-arrow-share js-arrow-up"></i>
+                <i
+                  class="fas fa-share-alt share__header--icon js-arrow-share js-arrow-up"
+                ></i>
                 Comparte
               </h2>
-              <i class="fas fa-chevron-up share__header--arrow"></i>
+              <img class="up-icon" src="./assets/images/monstera.png" />
             </div>
 
             <div class="share__create">
-              <button class="share__create--button js-create-btn" type="submit" name="submit" id="submit">
+              <button
+                class="share__create--button js-create-btn"
+                type="submit"
+                name="submit"
+                id="submit"
+              >
                 <i class="far fa-address-card share__button--icon"></i>
                 Crear tarjeta
               </button>
@@ -237,13 +247,17 @@
 
               <button class="share__result--twitter js-twitter-btn" type="button">
                 <i class="fab fa-twitter share__result--twitter_icon"></i>
-                <a href="" class="share__result--twitterlink js-twitter-link" data-show-count="false" target="_blank">Compartir
-                  en twitter
+                <a
+                  href=""
+                  class="share__result--twitterlink js-twitter-link"
+                  data-show-count="false"
+                  target="_blank"
+                  >Compartir en twitter
                 </a>
               </button>
-
             </div>
           </fieldset>
+
         </form>
       </section>
     </main>
