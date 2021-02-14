@@ -6,7 +6,7 @@
 
 Este proyecto consiste en realizar una aplicación web que nos permite crear una tarjeta de visita personalizada. En la página web podemos introducir nuestros datos profesionales y obtener una vista maquetada con esta información. El proyecto consta de 2 páginas:
 - Una página landing de bienvenida.
-- Una página con la aplicación de crear tarjetas.
+- Una página con la aplicación de crear tarjetas. 
 
 ## Guía de inicio rápido 
 
@@ -36,7 +36,6 @@ $ npm run docs
 ## Folder structure
 
 The folder structure looks like this:
-
 
 
 
