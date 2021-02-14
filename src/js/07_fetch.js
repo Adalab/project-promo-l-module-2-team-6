@@ -25,7 +25,7 @@ createBtn.addEventListener('click', handleCreateBtn);
 function fetchAPI() {
   const url = 'https://profileawesome.herokuapp.com/card';
   // eslint-disable-next-line no-undef
-  const data = saveInLocalStorage();
+  const data = getUserData();
   fetch(url, {
     method: 'POST',
     body: JSON.stringify(data),
@@ -35,7 +35,7 @@ function fetchAPI() {
   })
     .then((response) => response.json())
     .then((data) => {
-      // console.log('Server response:', data);
+      console.log('Server response:', data);
       if (data.success === true) {
         data.cardURL;
         shareLink = data.cardURL;
