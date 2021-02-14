@@ -1,7 +1,7 @@
 'use strict';
 
 const createBtn = document.querySelector('.js-create-btn');
-const cardResult = document.querySelector('.js-shareclick');
+const cardResult = document.querySelector('.js-card-link');
 const shareHidden = document.querySelector('.js-share-hidden');
 const formSubmit = document.querySelector('.js-submit');
 
@@ -37,14 +37,13 @@ function fetchAPI() {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log('Server response:', data);
       if (data.success === true) {
         data.cardURL;
         shareLink = data.cardURL;
         const linkElement = document.querySelector('.js-card-link');
-        linkElement.innerHTML = `<a href="${shareLink}" class="share__result--link js-shareclick" target="_blank">${shareLink}</a>;`;
+        linkElement.innerHTML = `<a href="${shareLink}" class="share__result--link js-card-link" target="_blank">${shareLink}</a>;`;
       } else {
-        cardResult.innerHTML = data.error;
+        cardResult.innerHTML = 'Debes cumplimentar todos los campos para poder crear tu enlace';
       }
     });
 }
