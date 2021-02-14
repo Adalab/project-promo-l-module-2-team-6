@@ -23,12 +23,20 @@
   background-color: $gradient-1;
   text-transform: uppercase;
   font-size: 12px;
+  font-family: $font-text;
+  color: $smaller-text;
+  padding: 6px 12px 6px 8px;
+  cursor: pointer;
+  &:hover {
+    background: $button-hover;
+    color: $color-bg-2;
+  }
+  &:focus {
+      outline: 0 none;
+    }
 
-  &--text {
-    padding: 6px 12px 6px 8px;
-    font-size: 12px;
-    font-family: $font-text;
-    color: $smaller-text;
+  &--icon {
+    padding: 0 5px 0 2px;
   }
 }
 

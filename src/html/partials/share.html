@@ -6,22 +6,24 @@
     </h2>
     <i class="fas fa-chevron-up share__header--arrow"></i>
   </div>
-  <div class="share__button hidden__container">
-    <button class="share__button--create js-create-btn" type="submit" name="submit" id="submit">
+
+  <div class="share__create">
+    <button class="share__create--button js-create-btn" type="submit" name="submit" id="submit">
       <i class="far fa-address-card share__button--icon"></i>
       Crear tarjeta
     </button>
+  </div>
 
-    <div class="shareclick hidden-share js-twitter-share">
-      <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
-      <p class="shareclick__text js-card-link"></p>
+  <div class="share__result js-twitter-share js-share-hidden">
+    <h3 class="share__result--title">La tarjeta ha sido creada:</h3>
+    <p class="share__result--text js-card-link"></p>
 
-      <button type="button" class="shareclick__twitter js-twitter-btn">
-        <i class="fab fa-twitter"></i>
-        <a href="" class="js-twitter-link shareclick__twitter--text" data-show-count="false" target="_blank"
-          >Compartir en twitter</a
-        >
-      </button>
-    </div>
+    <button class="share__result--twitter js-twitter-btn" type="button">
+      <i class="fab fa-twitter share__result--twitter_icon"></i>
+      <a href="" class="share__result--twitterlink js-twitter-link" data-show-count="false" target="_blank">Compartir
+        en twitter
+      </a>
+    </button>
+
   </div>
 </fieldset>

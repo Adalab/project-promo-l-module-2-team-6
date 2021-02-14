@@ -1,14 +1,18 @@
 .footer {
   background:$color-bg-2;
   border-top: solid 1px $border-lines;
-  height: 110px;
-  z-index: -1;
+  height: 72px;
+  // z-index: -1;
+
+  @include tablet {
+    height: 22px;
+  }
 
   &__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 18px 0 20px 0;
+  padding: 10px 0 10px 0;
   align-content: center;
   // position: relative;
   // left: 0;
@@ -30,15 +34,12 @@
     font-family: $font-text;
     text-align: center;
     color: $footer-text;
-    margin-top: 18px;
+    // margin-top: 18px;
     line-height: 1.43;
     opacity: 0.5;
 
     @include tablet {
       margin-left: 41px;
-    }
-    @include desktop {
-      font-size: 16px;
     }
   }
 
@@ -48,7 +49,9 @@
     margin-top: 10px;
 
       @include tablet {
-      margin-right: 40px;
-    }
+        width: 90px;
+        margin-right: 40px;
+        margin-top: 0;
+      }
   }
 }
