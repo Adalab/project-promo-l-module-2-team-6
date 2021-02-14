@@ -11,12 +11,17 @@
       <i class="far fa-address-card share__button--icon"></i>
       Crear tarjeta
     </button>
-  </div>
-  <div class="share__result js-share-hidden">
-    <p class="share__result--text">La tarjeta ha sido creada:</p>
-    <a class="share__result--link js-share-link" href="" target="_blank"></a>
-    <button class="share__result--twitter">
-        <i class="fa fa-twitter" aria-hidden="true"></i> Compartir en twitter
-    </button>
+
+    <div class="shareclick hidden-share js-twitter-share">
+      <h3 class="shareclick__title">La tarjeta ha sido creada:</h3>
+      <p class="shareclick__text js-card-link"></p>
+
+      <button type="button" class="shareclick__twitter js-twitter-btn">
+        <i class="fab fa-twitter"></i>
+        <a href="" class="js-twitter-link shareclick__twitter--text" data-show-count="false" target="_blank"
+          >Compartir en twitter</a
+        >
+      </button>
+    </div>
   </div>
 </fieldset>

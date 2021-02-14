@@ -10,8 +10,12 @@
 // ESTOY INTENTANDO QUITAR LOS ÍCONOS SI NO SE UTILIZAN, NO BORRAR AÚN!!
 // https://profileawesome.herokuapp.com/card   link para el share
 
+// eslint-disable-next-line no-undef
 getFromLocalStorage();
+// eslint-disable-next-line no-undef
 updateAllInputs();
+// eslint-disable-next-line no-undef
 handlePalette();
+// eslint-disable-next-line no-undef
 updatePhoto();
 
